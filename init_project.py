@@ -121,36 +121,100 @@ def main():
             print(f"\nDownloading Mistral 7B model to {model_path}...")
             os.makedirs(model_dir, exist_ok=True)
             
-            # Check if curl is available
-            if run_command("curl --version", cwd=current_dir):
-                download_command = (
-                    f"curl -L "
-                    f"https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf "
-                    f"-o \"{model_path}\""
-                )
-                
-                if not run_command(download_command, cwd=current_dir):
-                    print("Failed to download model. Please download it manually.")
-                    print("See README.md for instructions.")
-                else:
-                    print("Model downloaded successfully!")
-            else:
-                # Fall back to Python for downloading
-                print("curl not found, using Python to download...")
+            # Windows-specific handling - use Python directly for downloads
+            if platform.system() == "Windows":
+                print("Using Python to download model (this may take a while)...")
                 try:
-                    import requests
-                    print("Downloading model... (this may take a while)")
+                    # Install requests if not already available
+                    try:
+                        import requests
+                    except ImportError:
+                        print("Installing requests package...")
+                        run_command(f'"{pip_cmd}" install requests')
+                        import requests
+                    
+                    print("Starting model download (large file, ~4GB)...")
                     url = 'https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf'
-                    r = requests.get(url, stream=True)
-                    total_size = int(r.headers.get('content-length', 0))
-                    with open(model_path, 'wb') as f:
-                        for chunk in r.iter_content(chunk_size=8192):
-                            if chunk:
-                                f.write(chunk)
-                    print("Download complete.")
+                    
+                    with requests.get(url, stream=True, timeout=600) as r:
+                        r.raise_for_status()
+                        total_size = int(r.headers.get('content-length', 0))
+                        downloaded = 0
+                        with open(model_path, 'wb') as f:
+                            for chunk in r.iter_content(chunk_size=8192*1024):  # Use larger chunks
+                                if chunk:
+                                    downloaded += len(chunk)
+                                    f.write(chunk)
+                                    # Print progress
+                                    if total_size > 0:
+                                        percent = (downloaded / total_size) * 100
+                                        print(f"Download progress: {percent:.1f}% ({downloaded/(1024*1024):.1f} MB / {total_size/(1024*1024):.1f} MB)", end='\r')
+                    
+                    print("\nDownload complete.")
+                    if os.path.exists(model_path) and os.path.getsize(model_path) > 0:
+                        print(f"Model downloaded successfully to {model_path}")
+                    else:
+                        print("Download appears to have failed. File is empty or does not exist.")
                 except Exception as e:
                     print(f"Error downloading model: {e}")
-                    print("Please download it manually. See README.md for instructions.")
+                    print("\nAlternative download options:")
+                    print("1. Use a browser to download from: https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf")
+                    print(f"2. Save the file to: {model_path}")
+                    print("3. Continue setup after downloading")
+            else:
+                # Non-Windows systems - try curl first, then Python
+                if run_command("curl --version", cwd=current_dir):
+                    download_command = (
+                        f"curl -L --connect-timeout 30 --max-time 3600 "
+                        f"https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf "
+                        f"-o \"{model_path}\""
+                    )
+                    
+                    if not run_command(download_command, cwd=current_dir):
+                        print("Failed to download model using curl. Trying Python method...")
+                        use_python_download = True
+                    else:
+                        print("Model downloaded successfully!")
+                        use_python_download = False
+                else:
+                    use_python_download = True
+                
+                # Fall back to Python for downloading
+                if use_python_download:
+                    print("Using Python to download model (this may take a while)...")
+                    try:
+                        # Install requests if not already available
+                        try:
+                            import requests
+                        except ImportError:
+                            print("Installing requests package...")
+                            run_command(f'"{pip_cmd}" install requests')
+                            import requests
+                        
+                        print("Starting model download (large file, ~4GB)...")
+                        url = 'https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf'
+                        
+                        with requests.get(url, stream=True, timeout=600) as r:
+                            r.raise_for_status()
+                            total_size = int(r.headers.get('content-length', 0))
+                            downloaded = 0
+                            with open(model_path, 'wb') as f:
+                                for chunk in r.iter_content(chunk_size=8192*1024):  # Use larger chunks
+                                    if chunk:
+                                        downloaded += len(chunk)
+                                        f.write(chunk)
+                                        # Print progress
+                                        if total_size > 0:
+                                            percent = (downloaded / total_size) * 100
+                                            print(f"Download progress: {percent:.1f}% ({downloaded/(1024*1024):.1f} MB / {total_size/(1024*1024):.1f} MB)", end='\r')
+                        
+                        print("\nDownload complete.")
+                    except Exception as e:
+                        print(f"Error downloading model: {e}")
+                        print("\nAlternative download options:")
+                        print("1. Use a browser to download from: https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf")
+                        print(f"2. Save the file to: {model_path}")
+                        print("3. Continue setup after downloading")
     
     print("\n=== Setup Complete! ===")
     print(f"Project initialized in: {current_dir}")
