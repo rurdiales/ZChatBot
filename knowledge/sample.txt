@@ -1,0 +1,38 @@
+# Industrial Pump XYZ-123 Specifications
+
+## Technical Specifications
+- Model: XYZ-123
+- Type: Centrifugal Pump
+- Flow Rate: 100-500 GPM
+- Head: 50-200 ft
+- Operating Temperature: 20°C to 80°C
+- NPSH Required: 10 ft
+- Maximum Working Pressure: 250 PSI
+- Motor: 50 HP, 3-phase, 460V
+- Weight: 750 lbs
+
+## Maintenance Schedule
+- Daily: Check for leaks, unusual noise, or vibrations
+- Weekly: Inspect coupling alignment
+- Monthly: Grease bearings (if applicable)
+- Quarterly: Check and clean all filters
+- Annually: Complete overhaul including impeller inspection
+
+## Troubleshooting Guide
+- Pump not delivering water:
+  * Check for air in system
+  * Verify inlet valve is open
+  * Check for clogged impeller
+  * Ensure proper rotation direction
+
+- Excessive noise or vibration:
+  * Look for cavitation
+  * Check for misalignment
+  * Inspect for worn bearings
+  * Verify foundation bolts are tight
+
+- Overheating:
+  * Check for adequate flow
+  * Verify cooling system is functional
+  * Ensure operating within temperature range
+  * Check motor load 
