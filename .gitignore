@@ -64,6 +64,7 @@ coverage.xml
 *.pkl
 *.pth
 *.bin
+*.gguf
 
 # Data files
 data/raw/*
