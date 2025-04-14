@@ -49,4 +49,45 @@ class VectorStore:
             self.db._collection.delete(ids=all_ids)
             print(f"Vector store cleared: {len(all_ids)} documents removed")
         else:
-            print("Vector store is already empty") 
+            print("Vector store is already empty")
+            
+    def vacuum_database(self) -> None:
+        """Vacuum the ChromaDB database to optimize after version upgrades."""
+        try:
+            # Access the underlying collection client
+            print("Vacuuming ChromaDB database...")
+            
+            # Get the underlying Chroma client
+            client = self.db._collection._client
+            
+            # Different ways to try vacuuming depending on ChromaDB version
+            try:
+                # Newer ChromaDB versions
+                client.vacuum()
+                print("Database vacuum completed successfully using client.vacuum()")
+            except (AttributeError, TypeError) as e1:
+                try:
+                    # Try alternative method
+                    client._system.vacuum()
+                    print("Database vacuum completed successfully using client._system.vacuum()")
+                except (AttributeError, TypeError) as e2:
+                    try:
+                        # Try direct access to the SQLite database
+                        import sqlite3
+                        db_path = os.path.join(self.persist_dir, "chroma.sqlite3")
+                        if os.path.exists(db_path):
+                            conn = sqlite3.connect(db_path)
+                            conn.execute("VACUUM")
+                            conn.close()
+                            print("Database vacuum completed successfully using direct SQLite VACUUM")
+                        else:
+                            raise FileNotFoundError(f"SQLite database not found at {db_path}")
+                    except Exception as e3:
+                        raise Exception(f"Failed all vacuum methods: {e1}, {e2}, {e3}")
+            
+        except Exception as e:
+            print(f"Error during database vacuum: {e}")
+            print("If the error persists, you may need to rebuild the vector database:")
+            print("1. Backup your documents in the knowledge folder")
+            print("2. Delete the data/vectordb directory")
+            print("3. Run the chatbot with --process to recreate the database") 

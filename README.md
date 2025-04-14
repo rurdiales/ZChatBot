@@ -1,184 +1,100 @@
-# Industrial RAG Chatbot
+# ZChatBot - An Industrial RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) chatbot designed for industrial environments, powered by Mistral 7B and running entirely on-premises.
+ZChatBot is a Retrieval-Augmented Generation (RAG) chatbot designed for industrial use cases. It uses local LLM models to provide private, secure responses based on your own documents.
 
-## Features
+## Quick Setup
 
-- Processes and indexes various document formats (PDF, DOCX, TXT, images)
-- Uses a vector database to store document embeddings
-- Runs a state-of-the-art open-source LLM (Mistral 7B) locally
-- Answers questions based on your custom knowledge base
-- Completely on-premises - no cloud APIs required
+To set up the chatbot, follow these simple steps:
 
-## Project Structure
-
+1. Clone the repository:
 ```
-industrial_chatbot/
-├── data/                   # Vector store data
-├── knowledge/              # Knowledge base documents
-├── models/                 # LLM model files
-├── src/                    # Source code
-│   ├── __init__.py
-│   ├── chatbot.py          # Main chatbot class
-│   ├── config.py           # Configuration settings
-│   ├── document_processor.py  # Handles different document types
-│   ├── llm.py              # Interface to local LLM
-│   └── vector_store.py     # Vector DB interface
-├── main.py                 # CLI interface
-├── README.md               # This file
-└── requirements.txt        # Dependencies
+git clone <repository-url>
+cd ZChatBot
 ```
 
-## Setup
-
-1. Create a virtual environment and activate it:
-
-```bash
-# Navigate to the project directory
-cd industrial_chatbot
-
-# Activate the virtual environment
-source venv/bin/activate  # On Linux/Mac
-# or
-venv\Scripts\activate  # On Windows
+2. Run the setup script:
+```
+python setup.py
 ```
 
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Install Tesseract OCR (for image processing):
-
-```bash
-# For macOS
-brew install tesseract
-
-# For Ubuntu/Debian
-sudo apt-get install tesseract-ocr
-
-# For Windows
-# Download and install from https://github.com/UB-Mannheim/tesseract/wiki
-```
-
-4. Download the GGUF model:
-
-```bash
-mkdir -p models/mistral-7b-instruct-v0.2-gguf
-curl -L https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf -o models/mistral-7b-instruct-v0.2-gguf/mistral-7b-instruct-v0.2.Q4_K_M.gguf
-```
-
-## GPU Acceleration
-
-The chatbot is configured to use GPU acceleration for faster responses. To enable GPU support:
-
-1. Make sure you have a compatible NVIDIA GPU
-
-2. Install CUDA toolkit (version 11.7+ recommended):
-   - Download from [NVIDIA CUDA](https://developer.nvidia.com/cuda-downloads)
-   - Follow installation instructions for your operating system
-
-3. Install PyTorch with CUDA support:
-   ```bash
-   # For CUDA 11.8
-   pip install torch --upgrade --extra-index-url https://download.pytorch.org/whl/cu118
-   
-   # For CUDA 12.1
-   pip install torch --upgrade --extra-index-url https://download.pytorch.org/whl/cu121
-   ```
-
-4. Verify GPU is detected:
-   ```python
-   import torch
-   print(f"CUDA available: {torch.cuda.is_available()}")
-   print(f"CUDA device count: {torch.cuda.device_count()}")
-   ```
-
-The chatbot's `gpu_layers` parameter in `src/llm.py` is set to 32 by default, which offloads a significant portion of the model to GPU. Adjust based on your GPU memory:
-- For GPUs with 8GB+ VRAM: Use 32 or higher
-- For GPUs with less VRAM: Try a lower number (e.g., 24, 16, or 8)
-- For CPU-only: Set to 0
-
-## Adding Knowledge
-
-Place your documents in the `knowledge` directory:
-
-```bash
-# Create the knowledge directory if it doesn't exist
-mkdir -p knowledge
-
-# Copy your files
-cp /path/to/your/documents/*.pdf knowledge/
-cp /path/to/your/documents/*.docx knowledge/
-# etc.
-```
+This will:
+- Install all required dependencies
+- Download the appropriate model (Phi-3-mini)
+- Create necessary directories for your documents and data
 
 ## Usage
 
-### Process Documents
+After setup, you can use the chatbot with two simple commands:
 
-Before asking questions, you need to process your documents and build the vector database:
-
-```bash
+1. Process your documents:
+```
 python main.py --process
 ```
+This command will process any documents you place in the `knowledge` directory.
 
-### Interactive Mode
-
-Start an interactive session with the chatbot:
-
-```bash
+2. Start the interactive chat mode:
+```
 python main.py --interactive
 ```
+This will start the chatbot in interactive mode where you can ask questions about your documents.
 
-### Single Query
+## Web Interface
 
-Ask a single question:
+ZChatBot comes with a web interface powered by Gradio, making it easy to interact with your chatbot through a browser.
 
-```bash
-python main.py --query "What is the operating temperature of pump XYZ-123?"
+1. Install Gradio (if you haven't already run setup.py):
+```
+pip install gradio
 ```
 
-### Clear Knowledge Base
-
-If you need to rebuild your knowledge base from scratch:
-
-```bash
-python main.py --clear
+2. Launch the web interface:
+```
+python webapp.py
 ```
 
-## Upgrading to Mixtral 8x7B
-
-For production use, you can upgrade to Mixtral 8x7B by modifying the configuration in `src/config.py`. Change:
-
-```python
-MODEL_ID = "TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF"
-MODEL_TYPE = "mixtral"
-LOCAL_MODEL_PATH = os.path.join(MODELS_DIR, "mixtral-8x7b-instruct-v0.1-gguf")
+3. Open your browser and navigate to:
+```
+http://localhost:7860
 ```
 
-Then download the new model:
+The web interface provides:
+- A chat interface for asking questions
+- A model selector to switch between different LLMs
+- Tools to process and manage your knowledge base
 
-```bash
-mkdir -p models/mixtral-8x7b-instruct-v0.1-gguf
-curl -L https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/resolve/main/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf -o models/mixtral-8x7b-instruct-v0.1-gguf/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf
+To make the interface accessible from other computers on your network, use:
 ```
+python webapp.py -- --server_name="0.0.0.0"
+```
+
+To create a temporary public URL (for sharing), use:
+```
+python webapp.py -- --share=True
+```
+
+## Supported Models
+
+The chatbot includes configurations for:
+- Phi-3-mini (default) - A smaller but powerful model
+- Phi-3-mini-128k - Extended context model for handling more text
+- TinyLlama - A lightweight alternative for minimal hardware
+- Zephyr-7B - A larger model for more complex reasoning
+
+To switch models, type `switch:<model_name>` in interactive mode.
+
+## System Requirements
+
+- Python 3.8+
+- 8GB RAM minimum (16GB+ recommended for larger models)
+- 4GB of free disk space for models
+- GPU acceleration supported but not required
 
 ## Troubleshooting
 
-If you encounter issues with loading the LLM:
+If you encounter issues with model loading:
 
-1. Make sure you've downloaded the correct GGUF file format of the model
-2. Check that your system meets the minimum requirements (8GB RAM for Mistral 7B with Q4_K_M quantization)
-3. For larger models, consider using a machine with more RAM or a GPU
+1. Make sure the model file was downloaded correctly during setup
+2. For Mac users, the setup should automatically configure Metal support for GPU acceleration
+3. On Windows, ensure you have the latest Python and pip versions
 
-For GPU-related issues:
-- Verify CUDA installation with `nvidia-smi` command
-- Check PyTorch can see your GPU with `torch.cuda.is_available()`
-- Try reducing `gpu_layers` if you encounter CUDA out of memory errors
-- Update graphics drivers to the latest version
-
-## License
-
-This project is open source and available under the MIT License. 
+For other issues, please check the error messages in the console output. 

@@ -8,6 +8,8 @@ sentence-transformers>=2.2.2
 # Document processing
 langchain>=0.0.312
 langchain-community>=0.0.10
+langchain-chroma>=0.0.2
+langchain-huggingface>=0.0.2
 pypdf>=3.15.1
 docx2txt>=0.8
 Pillow>=10.0.0
@@ -27,4 +29,7 @@ ctransformers>=0.2.27
 # Utilities
 tqdm>=4.66.1
 pydantic>=2.4.2
-python-dotenv>=1.0.0 
+python-dotenv>=1.0.0
+
+# Web interface
+gradio>=4.0.0 

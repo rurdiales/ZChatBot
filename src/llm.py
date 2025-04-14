@@ -17,7 +17,8 @@ from src.config import (
     STOP_SEQUENCES,
     PROMPT_TEMPLATES,
     LLAMACPP_CONFIGS,
-    CTRANSFORMERS_CONFIGS
+    CTRANSFORMERS_CONFIGS,
+    MODEL_FAMILIES
 )
 import torch
 
@@ -40,7 +41,8 @@ class LocalLLM:
         self.model_config = AVAILABLE_MODELS[self.model_name]
         self.model_id = self.model_config["model_id"]
         self.model_path = self.model_config["local_path"]
-        self.model_type = self.model_config["model_type"]
+        self.family = self.model_config["family"]
+        self.model_type = MODEL_FAMILIES[self.family]["model_type"]
         self.model_filename = self.model_config["filename"]
         self.model = self._load_model()
     
@@ -105,9 +107,10 @@ class LocalLLM:
             print("Will attempt to load but may fall back to TinyLlama if needed")
             
             # Check for fallback model
-            if "fallback_filename" in self.model_config and "fallback_path" in self.model_config:
-                fallback_path = self.model_config["fallback_path"]
-                fallback_file = os.path.join(fallback_path, self.model_config["fallback_filename"])
+            if "fallback" in self.model_config:
+                fallback_info = self.model_config["fallback"]
+                fallback_path = fallback_info["local_path"]
+                fallback_file = os.path.join(fallback_path, fallback_info["filename"])
                 if os.path.exists(fallback_file):
                     print(f"Fallback model found at {fallback_file}")
         
@@ -134,7 +137,7 @@ class LocalLLM:
                 print(f"Using LlamaCpp for {self.model_name} model...")
                 
                 # Get stop sequences for the model type
-                stop_seqs = STOP_SEQUENCES.get(self.model_type, [])
+                stop_seqs = STOP_SEQUENCES.get(self.family, [])
                 
                 # Get model-specific configuration or use default
                 model_config = LLAMACPP_CONFIGS.get(self.model_name, LLAMACPP_CONFIGS["default"]).copy()
@@ -166,7 +169,7 @@ class LocalLLM:
                     print(f"File size: {os.path.getsize(gguf_file) / (1024*1024*1024):.2f} GB")
                 
                 # Get stop sequences for the model type
-                stop_seqs = STOP_SEQUENCES.get(self.model_type, [])
+                stop_seqs = STOP_SEQUENCES.get(self.family, [])
                 
                 # Get Mixtral-specific configuration from config.py
                 model_config = LLAMACPP_CONFIGS.get(self.model_name, LLAMACPP_CONFIGS["default"]).copy()
@@ -187,9 +190,10 @@ class LocalLLM:
                 print("Attempting to load fallback model for Mixtral...")
                 
                 # Try to use the fallback model for Mixtral
-                if "fallback_filename" in self.model_config and "fallback_path" in self.model_config:
-                    fallback_path = self.model_config["fallback_path"]
-                    fallback_file = os.path.join(fallback_path, self.model_config["fallback_filename"])
+                if "fallback" in self.model_config:
+                    fallback_info = self.model_config["fallback"]
+                    fallback_path = fallback_info["local_path"]
+                    fallback_file = os.path.join(fallback_path, fallback_info["filename"])
                     
                     if os.path.exists(fallback_file):
                         print(f"Loading fallback model: {fallback_file}")
@@ -266,8 +270,8 @@ class LocalLLM:
         if context_docs:
             context = "\n\n".join([doc.page_content for doc in context_docs])
         
-        # Get the prompt template for the model type
-        prompt_template = PROMPT_TEMPLATES.get(self.model_type, PROMPT_TEMPLATES["mistral"])
+        # Get the prompt template for the model family
+        prompt_template = PROMPT_TEMPLATES.get(self.family, PROMPT_TEMPLATES["mistral"])
         prompt = PromptTemplate.from_template(prompt_template)
         
         # Generate the response using the modern pattern (prompt | llm)
