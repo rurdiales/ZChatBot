@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+import platform
+import sys
+import torch
 
 # Project directories
 BASE_DIR = Path(__file__).parent.parent.absolute()
@@ -9,6 +12,12 @@ MODELS_DIR = os.path.join(BASE_DIR, "models")
 
 # Vector DB settings
 VECTORDB_PATH = os.path.join(DATA_DIR, "vectordb")
+
+# Detect if using CUDA
+is_cuda = torch.cuda.is_available() if 'torch' in sys.modules else False
+
+# Map model types differently based on hardware
+PHI3_MODEL_TYPE = "phi" if is_cuda else "phi"
 
 # Available models configuration
 AVAILABLE_MODELS = {
@@ -26,20 +35,27 @@ AVAILABLE_MODELS = {
         "filename": "zephyr-7b-beta.Q4_K_M.gguf",
         "download_url": "https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/resolve/main/zephyr-7b-beta.Q4_K_M.gguf"
     },
-    "phi-3-mini": {
-        "model_id": "bartowski/Phi-3-mini-4k-instruct-GGUF",
-        "model_type": "phi",
-        "local_path": os.path.join(MODELS_DIR, "phi-3-mini-4k-instruct-gguf"),
-        "filename": "Phi-3-mini-4k-instruct-IQ4_XS.gguf",
-        "download_url": "https://huggingface.co/bartowski/Phi-3-mini-4k-instruct-GGUF/resolve/main/Phi-3-mini-4k-instruct-IQ4_XS.gguf"
-    },
-    "phi-3-medium": {
-        "model_id": "bartowski/Phi-3-medium-4k-instruct-GGUF",
-        "model_type": "phi",
-        "local_path": os.path.join(MODELS_DIR, "phi-3-medium-4k-instruct-gguf"),
-        "filename": "Phi-3-medium-4k-instruct-Q4_K_M.gguf",
-        "download_url": "https://huggingface.co/bartowski/Phi-3-medium-4k-instruct-GGUF/resolve/main/Phi-3-medium-4k-instruct-Q4_K_M.gguf"
-    },
+#     "phi-3-mini": {
+#        "model_id": "bartowski/Phi-3-mini-4k-instruct-GGUF",
+#        "model_type": "phi",
+#        "local_path": os.path.join(MODELS_DIR, "phi-3-mini-4k-instruct-gguf"),
+#        "filename": "Phi-3-mini-4k-instruct-Q4_K_M.gguf",
+#        "download_url": "https://huggingface.co/bartowski/Phi-3-mini-4k-instruct-GGUF/resolve/main/Phi-3-mini-4k-instruct-Q4_K_M.gguf"
+#    },
+    "phi-3-mini-cuda": {
+       "model_id": "microsoft/Phi-3-mini-4k-instruct-gguf",
+       "model_type": "phi",
+       "local_path": os.path.join(MODELS_DIR, "phi-3-mini-4k-instruct-gguf"),
+       "filename": "Phi-3-mini-4k-instruct-q4.gguf",
+       "download_url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4.gguf"
+   },
+    # "phi-3-medium": {
+    #     "model_id": "bartowski/Phi-3-medium-4k-instruct-GGUF",
+    #     "model_type": PHI3_MODEL_TYPE,
+    #     "local_path": os.path.join(MODELS_DIR, "phi-3-medium-4k-instruct-gguf"),
+    #     "filename": "Phi-3-medium-4k-instruct-Q4_K_M.gguf",
+    #     "download_url": "https://huggingface.co/bartowski/Phi-3-medium-4k-instruct-GGUF/resolve/main/Phi-3-medium-4k-instruct-Q4_K_M.gguf"
+    # },
     "tinyllama-1.1b": {
         "model_id": "TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF",
         "model_type": "llama",
@@ -56,19 +72,10 @@ AVAILABLE_MODELS = {
         "fallback_filename": "tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
         "fallback_path": os.path.join(MODELS_DIR, "tinyllama-1.1b-chat-v1.0-gguf")
     },
-    "mixtral-8x7b-awq": {
-        "model_id": "casualjim/mixtral-8x7B-v0.1-awq-gguf",
-        "model_type": "mistral",
-        "local_path": os.path.join(MODELS_DIR, "mixtral-8x7b-v0.1-awq-gguf"),
-        "filename": "mistralai-mixtral-8x7B-v0.1_awq_q6_K.gguf",
-        "download_url": "https://huggingface.co/casualjim/mixtral-8x7B-v0.1-awq-gguf/resolve/main/mistralai-mixtral-8x7B-v0.1_awq_q6_K.gguf",
-        "fallback_filename": "tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
-        "fallback_path": os.path.join(MODELS_DIR, "tinyllama-1.1b-chat-v1.0-gguf")
-    },
 }
 
 # Default model
-DEFAULT_MODEL = "phi-3-mini"
+DEFAULT_MODEL = "phi-3-mini-cuda"
 MODEL_CONFIG = AVAILABLE_MODELS[DEFAULT_MODEL]
 
 # Get specific model settings from the active model config
@@ -120,6 +127,16 @@ LLAMACPP_CONFIGS = {
     },
     # Phi-specific configuration
     "phi-3-mini": {
+        "temperature": LLM_TEMPERATURE,
+        "max_tokens": MAX_NEW_TOKENS,
+        "n_ctx": LLM_CONTEXT_LENGTH,
+        "n_batch": 512,
+        "n_gpu_layers": LLM_GPU_LAYERS,
+        "f16_kv": True,
+        "verbose": LLM_VERBOSE,
+        "seed": 42
+    },
+    "phi-3-mini-cuda": {
         "temperature": LLM_TEMPERATURE,
         "max_tokens": MAX_NEW_TOKENS,
         "n_ctx": LLM_CONTEXT_LENGTH,
