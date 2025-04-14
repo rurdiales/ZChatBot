@@ -74,6 +74,13 @@ data/processed/*
 *.sqlite
 !data/.gitkeep
 
+# Vector database files
+data/vectordb/
+**/chroma.sqlite3
+**/chroma.sqlite3-*
+**/chroma.sqlite3-shm
+**/chroma.sqlite3-wal
+
 # Logs and temporary files
 logs/
 *.log
