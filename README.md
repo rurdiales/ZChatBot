@@ -12,7 +12,29 @@ git clone <repository-url>
 cd ZChatBot
 ```
 
-2. Run the setup script:
+2. (Recommended) Create and activate a virtual environment:
+
+**Windows (PowerShell):**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+**Windows (Command Prompt):**
+```cmd
+python -m venv venv
+venv\Scripts\activate.bat
+```
+
+**MacOS/Linux:**
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+You should see `(venv)` appear at the beginning of your command prompt, indicating the virtual environment is active.
+
+3. Run the setup script:
 ```
 python setup.py
 ```
@@ -21,6 +43,12 @@ This will:
 - Install all required dependencies
 - Download the appropriate model (Phi-3-mini)
 - Create necessary directories for your documents and data
+
+4. Verify installation:
+```
+# Check if key packages are installed correctly
+python -c "import torch; import gradio; print('Setup successful!')"
+```
 
 ## Usage
 

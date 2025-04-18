@@ -123,20 +123,8 @@ AVAILABLE_MODELS = {
     #     "filename": "Phi-3-mini-4k-instruct-Q4_K_M.gguf",
     #     "download_url": "https://huggingface.co/bartowski/Phi-3-mini-4k-instruct-GGUF/resolve/main/Phi-3-mini-4k-instruct-Q4_K_M.gguf",
     #     "config_template": "optimized",
-    #     "description": "Small model with good performance (2.2GB)"
+    #     "description": "Small model with good performance (2.2GB). This version does not work with CUDA."
     # },
-    "phi-3-medium": {
-        "model_id": "bartowski/Phi-3-medium-4k-instruct-GGUF",
-        "family": "phi",
-        "local_path": os.path.join(MODELS_DIR, "phi-3-medium-4k-instruct-gguf"),
-        "filename": "Phi-3-medium-4k-instruct-Q4_K_M.gguf",
-        "download_url": "https://huggingface.co/bartowski/Phi-3-medium-4k-instruct-GGUF/resolve/main/Phi-3-medium-4k-instruct-Q4_K_M.gguf",
-        "config_template": "optimized",
-        "config_override": {
-            "n_batch": 128,
-        },
-        "description": "Medium-sized model with better reasoning (4GB)"
-    },
     "phi-3-mini-cuda": {
         "model_id": "microsoft/Phi-3-mini-4k-instruct-gguf",
         "family": "phi",
@@ -144,8 +132,20 @@ AVAILABLE_MODELS = {
         "filename": "Phi-3-mini-4k-instruct-q4.gguf",
         "download_url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4.gguf",
         "config_template": "optimized",
-        "description": "Small model with good performance (2.2GB)"
+        "description": "Small model with good performance (2.2GB). This version works with CUDA."
     },
+    # "phi-3-medium": {
+    #     "model_id": "bartowski/Phi-3-medium-4k-instruct-GGUF",
+    #     "family": "phi",
+    #     "local_path": os.path.join(MODELS_DIR, "phi-3-medium-4k-instruct-gguf"),
+    #     "filename": "Phi-3-medium-4k-instruct-Q4_K_M.gguf",
+    #     "download_url": "https://huggingface.co/bartowski/Phi-3-medium-4k-instruct-GGUF/resolve/main/Phi-3-medium-4k-instruct-Q4_K_M.gguf",
+    #     "config_template": "optimized",
+    #     "config_override": {
+    #         "n_batch": 128,
+    #     },
+    #     "description": "Medium-sized model with better reasoning (4GB)"
+    # },
     
     # Mistral models
     # "mistral-7b": {
@@ -171,15 +171,15 @@ AVAILABLE_MODELS = {
         },
         "description": "Extended 16K context window for large technical documents (4.4GB)"
     },
-    "zephyr-7b": {
-        "model_id": "TheBloke/zephyr-7B-beta-GGUF",
-        "family": "mistral",
-        "local_path": os.path.join(MODELS_DIR, "zephyr-7b-beta-gguf"),
-        "filename": "zephyr-7b-beta.Q4_K_M.gguf",
-        "download_url": "https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/resolve/main/zephyr-7b-beta.Q4_K_M.gguf",
-        "config_template": "optimized",
-        "description": "Instruction-tuned 7B model (4.1GB)"
-    },
+    # "zephyr-7b": {
+    #     "model_id": "TheBloke/zephyr-7B-beta-GGUF",
+    #     "family": "mistral",
+    #     "local_path": os.path.join(MODELS_DIR, "zephyr-7b-beta-gguf"),
+    #     "filename": "zephyr-7b-beta.Q4_K_M.gguf",
+    #     "download_url": "https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/resolve/main/zephyr-7b-beta.Q4_K_M.gguf",
+    #     "config_template": "optimized",
+    #     "description": "Instruction-tuned 7B model (4.1GB)"
+    # },
     # "mixtral-8x7b": {
     #     "model_id": "TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF",
     #     "family": "mistral",
