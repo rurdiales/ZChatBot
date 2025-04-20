@@ -22,6 +22,7 @@ from src.config import (
 )
 import torch
 from datetime import datetime
+from dotenv import load_dotenv
 
 # Import llama-cpp-python for Phi-3 support
 try:
@@ -36,6 +37,9 @@ try:
     OPENAI_AVAILABLE = True
 except ImportError:
     OPENAI_AVAILABLE = False
+
+# Load environment variables from .env file
+load_dotenv()
 
 class LocalLLM:
     """Interface to the local LLM and OpenAI API."""

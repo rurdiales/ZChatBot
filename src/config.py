@@ -31,7 +31,7 @@ CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 
 # Embedding model
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "intfloat/multilingual-e5-large"
 
 # Model families
 MODEL_FAMILIES = {
