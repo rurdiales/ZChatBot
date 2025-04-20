@@ -85,6 +85,17 @@ Context:
 Question: {query}<|im_end|>
 <|im_start|>assistant
 """
+    },
+    "openai": {
+        "model_type": "api",
+        "stop_words": [],
+        "prompt_template": """You are an industrial assistant that answers questions based on the provided context.
+Answer the question based only on the context provided. If you don't know the answer based on the context, say "I don't have enough information to answer this question."
+
+Context:
+{context}
+
+Question: {query}"""
     }
 }
 
@@ -217,7 +228,18 @@ AVAILABLE_MODELS = {
     #     "download_url": "https://huggingface.co/QuantFactory/Qwen2-1.5B-Instruct-GGUF/resolve/main/Qwen2-1.5B-Instruct.Q4_K_M.gguf",
     #     "config_template": "base",
     #     "description": "Small but capable Chinese/English model (1.3GB)"
-    # }
+    # },
+    # OpenAI API models
+    "gpt-3.5-turbo": {
+        "model_id": "gpt-3.5-turbo-0125",
+        "family": "openai",
+        "description": "OpenAI GPT-3.5 Turbo - Affordable API model with 16k context window"
+    },
+    "gpt-4": {
+        "model_id": "gpt-4-turbo-preview",
+        "family": "openai",
+        "description": "OpenAI GPT-4 Turbo - Premium API model with advanced reasoning (more expensive)"
+    }
 }
 
 # Default model
@@ -228,8 +250,15 @@ MODEL_CONFIG = AVAILABLE_MODELS[DEFAULT_MODEL]
 MODEL_ID = MODEL_CONFIG["model_id"]
 MODEL_FAMILY = MODEL_CONFIG["family"]
 MODEL_TYPE = MODEL_FAMILIES[MODEL_FAMILY]["model_type"]
-LOCAL_MODEL_PATH = MODEL_CONFIG["local_path"]
-MODEL_FILENAME = MODEL_CONFIG["filename"]
+
+# Set local path and filename only for local models
+if "local_path" in MODEL_CONFIG:
+    LOCAL_MODEL_PATH = MODEL_CONFIG["local_path"]
+    MODEL_FILENAME = MODEL_CONFIG["filename"]
+else:
+    # For API models that don't have local files
+    LOCAL_MODEL_PATH = ""
+    MODEL_FILENAME = ""
 
 # Build LLAMACPP_CONFIGS dynamically from templates and AVAILABLE_MODELS
 LLAMACPP_CONFIGS = {
@@ -282,6 +311,7 @@ os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(MODELS_DIR, exist_ok=True)
 os.makedirs(VECTORDB_PATH, exist_ok=True)
 
-# Create model directories
+# Create model directories (skip API models that don't have local paths)
 for model_name, config in AVAILABLE_MODELS.items():
-    os.makedirs(config["local_path"], exist_ok=True) 
+    if "local_path" in config:
+        os.makedirs(config["local_path"], exist_ok=True) 

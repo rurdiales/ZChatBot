@@ -21,6 +21,7 @@ from src.config import (
     MODEL_FAMILIES
 )
 import torch
+from datetime import datetime
 
 # Import llama-cpp-python for Phi-3 support
 try:
@@ -28,9 +29,16 @@ try:
     LLAMACPP_AVAILABLE = True
 except ImportError:
     LLAMACPP_AVAILABLE = False
+    
+# Import OpenAI for API models
+try:
+    from openai import OpenAI
+    OPENAI_AVAILABLE = True
+except ImportError:
+    OPENAI_AVAILABLE = False
 
 class LocalLLM:
-    """Interface to the local LLM."""
+    """Interface to the local LLM and OpenAI API."""
     
     def __init__(self, model_name: str = DEFAULT_MODEL):
         self.model_name = model_name
@@ -40,10 +48,14 @@ class LocalLLM:
             
         self.model_config = AVAILABLE_MODELS[self.model_name]
         self.model_id = self.model_config["model_id"]
-        self.model_path = self.model_config["local_path"]
         self.family = self.model_config["family"]
         self.model_type = MODEL_FAMILIES[self.family]["model_type"]
-        self.model_filename = self.model_config["filename"]
+        
+        # Set local model path and filename only for local models
+        if "local_path" in self.model_config:
+            self.model_path = self.model_config["local_path"]
+            self.model_filename = self.model_config["filename"]
+        
         self.model = self._load_model()
     
     def _download_model(self, gguf_file: str) -> bool:
@@ -86,7 +98,12 @@ class LocalLLM:
             return False
     
     def _load_model(self):
-        """Load the model from local path."""
+        """Load the model (local path or API client)."""
+        # Check for OpenAI API models
+        if self.family == "openai":
+            return self._load_openai_model()
+            
+        # Below is the existing code for local models
         # Better GPU detection including Apple Silicon
         is_apple_silicon = platform.system() == 'Darwin' and platform.machine() == 'arm64'
         has_cuda = torch.cuda.is_available()
@@ -260,6 +277,52 @@ class LocalLLM:
             print("CT_METAL=1 pip install ctransformers --no-binary ctransformers")
         return None
     
+    def _load_openai_model(self):
+        """Initialize OpenAI API client."""
+        if not OPENAI_AVAILABLE:
+            print("Error: OpenAI package not installed. Install with 'pip install openai'")
+            return None
+            
+        api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            print("======================================================")
+            print("Error: OPENAI_API_KEY environment variable not set.")
+            print("Please set your OpenAI API key in the .env file:")
+            print("OPENAI_API_KEY=your-api-key-here")
+            print("")
+            print("If you have a .env file, make sure it's being loaded.")
+            print("Add these lines at the beginning of your script:")
+            print("from dotenv import load_dotenv")
+            print("load_dotenv()")
+            print("======================================================")
+            return None
+            
+        try:
+            print(f"Initializing OpenAI client for model {self.model_id}")
+            client = OpenAI(api_key=api_key)
+            
+            # Test the API connection
+            print("Testing OpenAI API connection...")
+            test_response = client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": "Hello"}],
+                max_tokens=5
+            )
+            print(f"OpenAI API connection successful! Model: {self.model_id}")
+            return client
+        except Exception as e:
+            print("======================================================")
+            print(f"Error initializing OpenAI client: {e}")
+            print("This could be due to:")
+            print("1. Invalid API key")
+            print("2. Network connectivity issues")
+            print("3. OpenAI service disruption")
+            print("")
+            print("Please check your API key and internet connection.")
+            print("For OpenAI service status: https://status.openai.com")
+            print("======================================================")
+            return None
+            
     def generate_answer(self, query: str, context_docs: Optional[List[Document]] = None) -> str:
         """Generate an answer to the query using the LLM and optional context."""
         if self.model is None:
@@ -269,6 +332,10 @@ class LocalLLM:
         context = ""
         if context_docs:
             context = "\n\n".join([doc.page_content for doc in context_docs])
+            
+        # Check if using OpenAI API
+        if self.family == "openai":
+            return self._generate_answer_openai(query, context)
         
         # Get the prompt template for the model family
         prompt_template = PROMPT_TEMPLATES.get(self.family, PROMPT_TEMPLATES["mistral"])
@@ -286,9 +353,47 @@ class LocalLLM:
             response = runnable.invoke({"context": context, "query": query})
             
             gen_time = time.time() - gen_start_time
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             print(f"Response generated in {gen_time:.2f} seconds with model {self.model_name}")
             
-            return response.strip()
+            response = response.strip()
+            response += f"\n\n[Response generated at {current_time} in {gen_time:.2f} seconds using {self.model_name}]"
+            
+            return response
         except Exception as e:
             print(f"Error generating response: {e}")
-            return "An error occurred while generating a response." 
+            return f"An error occurred while generating a response: {str(e)}"
+            
+    def _generate_answer_openai(self, query: str, context: str) -> str:
+        """Generate answer using OpenAI API."""
+        try:
+            gen_start_time = time.time()
+            
+            # Get the prompt template for OpenAI
+            prompt_template = PROMPT_TEMPLATES.get("openai")
+            system_prompt = prompt_template
+            
+            print(f"Sending request to OpenAI API ({self.model_id})...")
+            response = self.model.chat.completions.create(
+                model=self.model_id,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {query}"}
+                ],
+                temperature=LLM_TEMPERATURE,
+                max_tokens=MAX_NEW_TOKENS
+            )
+            
+            answer = response.choices[0].message.content
+            
+            # Add metadata to the response
+            gen_time = time.time() - gen_start_time
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            token_usage = f"Tokens: {response.usage.prompt_tokens} prompt, {response.usage.completion_tokens} completion, {response.usage.total_tokens} total"
+            
+            answer += f"\n\n[Response generated at {current_time} in {gen_time:.2f} seconds using {self.model_id}. {token_usage}]"
+            
+            return answer
+        except Exception as e:
+            print(f"Error with OpenAI API: {e}")
+            return f"Error generating response with OpenAI API: {str(e)}" 

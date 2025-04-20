@@ -2,6 +2,14 @@
 
 ZChatBot is a Retrieval-Augmented Generation (RAG) chatbot designed for industrial use cases. It uses local LLM models to provide private, secure responses based on your own documents.
 
+## Features
+
+- 💬 Question answering about industrial equipment and processes
+- 📄 Document processing (PDF, DOCX, TXT, images) with advanced OCR
+- 🔍 Retrieval Augmented Generation (RAG) for accurate, context-aware responses
+- 🚀 Multiple LLM backend options (local models and OpenAI API)
+- 🖥️ Simple web interface for easy interaction
+
 ## Quick Setup
 
 To set up the chatbot, follow these simple steps:
@@ -49,6 +57,22 @@ This will:
 # Check if key packages are installed correctly
 python -c "import torch; import gradio; print('Setup successful!')"
 ```
+
+5. Add documents to the knowledge base:
+
+```bash
+# Put your PDFs, DOCXs, TXTs in the knowledge directory
+mkdir -r knowledge
+# Copy your files to the knowledge directory
+```
+
+6. Run the web interface:
+
+```bash
+python webapp.py --process
+```
+
+7. Access the web interface at http://localhost:7860
 
 ## Usage
 
@@ -125,4 +149,38 @@ If you encounter issues with model loading:
 2. For Mac users, the setup should automatically configure Metal support for GPU acceleration
 3. On Windows, ensure you have the latest Python and pip versions
 
-For other issues, please check the error messages in the console output. 
+For other issues, please check the error messages in the console output.
+
+## Available Models
+
+The system supports both local models and the OpenAI API:
+
+### Local Models
+- **phi-3-mini** - Small model with good performance (2.2GB)
+- **mistral-7b-instruct-16k** - Extended 16K context window for large documents (4.4GB)
+
+### OpenAI API Models
+- **gpt-3.5-turbo** - Affordable API model with 16k context window (requires API key)
+- **gpt-4** - Premium API model with advanced reasoning (more expensive, requires API key)
+
+## Using OpenAI Models
+
+To use OpenAI models:
+
+1. Get an API key from [OpenAI Platform](https://platform.openai.com/account/api-keys)
+2. Add your API key to `.env` file: `OPENAI_API_KEY="your-key-here"`
+3. Run with the OpenAI model: `python webapp.py --model gpt-3.5-turbo`
+
+## Document Processing
+
+The system can process:
+- PDF documents (both text and scanned using OCR)
+- Word documents (DOCX)
+- Text files (TXT)
+- Images (PNG, JPG, JPEG) via OCR
+
+OCR is handled through PaddleOCR with PyMuPDF for PDF processing, providing high-quality text extraction.
+
+## License
+
+[MIT License](LICENSE) 

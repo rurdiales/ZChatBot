@@ -4,8 +4,12 @@ import sys
 import platform
 import torch
 import gradio as gr
+from dotenv import load_dotenv
 from src.chatbot import IndustrialChatbot
 from src.config import AVAILABLE_MODELS, DEFAULT_MODEL
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Detect hardware capabilities
 IS_CUDA = torch.cuda.is_available()
