@@ -25,25 +25,41 @@ def get_compatible_models():
         is_compatible = True
         compatibility_note = ""
         
-        # Special handling for specific models
-        if "mixtral" in model_name.lower() and not IS_CUDA and not (IS_APPLE_SILICON and "fallback" in model_info):
+        # Special handling for specific model families and sizes
+        model_family = model_info.get("family", "")
+        
+        # Check for specific incompatible conditions
+        if model_family == "mistral" and "16k" in model_name and not IS_CUDA and not IS_APPLE_SILICON:
             is_compatible = False
-            compatibility_note = "Requires CUDA GPU (too large for CPU-only)"
-        
-        # CPU-only models are compatible with everything
-        if model_name.endswith("-cpu"):
+            compatibility_note = "Large context models require GPU or Apple Silicon"
+            
+        # OpenAI API models are always compatible
+        if model_family == "openai":
             is_compatible = True
-            compatibility_note = "CPU-only (will work everywhere but slower)"
+            compatibility_note = "API model (requires API key)"
         
+        # TinyLlama is compatible with everything
+        if "tinyllama" in model_name.lower():
+            is_compatible = True
+            compatibility_note = "Compatible with all hardware"
+            
+        # Phi-3 models are compatible with most hardware
+        if model_family == "phi" and IS_APPLE_SILICON:
+            compatibility_note = "Optimized for Apple Silicon"
+        elif model_family == "phi" and IS_CUDA:
+            compatibility_note = "Optimized for CUDA GPU"
+        elif model_family == "phi":
+            compatibility_note = "Compatible with CPU but slower"
+            
         # Add model to compatible list with note
         if is_compatible:
-            compatible_models[model_name] = model_info
-            model_info["compatibility_note"] = compatibility_note if compatibility_note else "Compatible with current hardware"
+            compatible_models[model_name] = model_info.copy()
+            compatible_models[model_name]["compatibility_note"] = compatibility_note if compatibility_note else "Compatible with current hardware"
         else:
             # Add to list but mark as incompatible
-            compatible_models[model_name] = model_info
-            model_info["compatibility_note"] = compatibility_note if compatibility_note else "May not be compatible"
-            model_info["is_incompatible"] = True
+            compatible_models[model_name] = model_info.copy()
+            compatible_models[model_name]["compatibility_note"] = compatibility_note if compatibility_note else "May not be compatible"
+            compatible_models[model_name]["is_incompatible"] = True
     
     return compatible_models
 
@@ -56,18 +72,20 @@ def get_best_default_model():
     if DEFAULT_MODEL in COMPATIBLE_MODELS and not COMPATIBLE_MODELS[DEFAULT_MODEL].get("is_incompatible", False):
         return DEFAULT_MODEL
     
-    # If on Apple Silicon, prefer phi-3-mini or phi-3-mini-cpu
+    # If on Apple Silicon, prefer phi-3 models
     if IS_APPLE_SILICON:
-        if "phi-3-mini" in COMPATIBLE_MODELS and not COMPATIBLE_MODELS["phi-3-mini"].get("is_incompatible", False):
-            return "phi-3-mini"
-        elif "phi-3-mini-cpu" in COMPATIBLE_MODELS:
-            return "phi-3-mini-cpu"
+        if "phi-3-mini-4k-instruct" in COMPATIBLE_MODELS and not COMPATIBLE_MODELS["phi-3-mini-4k-instruct"].get("is_incompatible", False):
+            return "phi-3-mini-4k-instruct"
     
     # If CUDA available, prefer a larger model that's compatible
     if IS_CUDA:
-        for model_name in ["phi-3-medium", "phi-3-mini", "mistral-7b", "zephyr-7b"]:
+        for model_name in ["mistral-7b-instruct-16k", "phi-3-mini-4k-instruct"]:
             if model_name in COMPATIBLE_MODELS and not COMPATIBLE_MODELS[model_name].get("is_incompatible", False):
                 return model_name
+    
+    # If OpenAI API key is set, prefer gpt-3.5-turbo
+    if os.environ.get("OPENAI_API_KEY") and "gpt-3.5-turbo" in COMPATIBLE_MODELS:
+        return "gpt-3.5-turbo"
     
     # Fallback to tinyllama which should work anywhere
     if "tinyllama-1.1b" in COMPATIBLE_MODELS:
@@ -140,30 +158,79 @@ def get_model_info(model_name):
         return "Model not found"
     
     model_info = AVAILABLE_MODELS[model_name]
-    info_text = f"Model: {model_name}\n"
-    info_text += f"Description: {model_info.get('description', 'No description available')}\n"
-    info_text += f"Family: {model_info.get('family', 'Unknown')}\n"
+    
+    # Start building HTML content
+    html = "<div style='padding: 10px; max-width: 800px;'>"
+    html += f"<h3>{model_name}</h3>"
+    html += f"<p><strong>Description:</strong> {model_info.get('description', 'No description available')}</p>"
+    html += f"<p><strong>Family:</strong> {model_info.get('family', 'Unknown')}</p>"
+    
+    # Add HuggingFace link for local models
+    if "model_id" in model_info and model_info.get("family") != "openai":
+        model_id = model_info["model_id"]
+        if "/" in model_id:  # It's a HuggingFace model
+            html += f"<p><strong>HuggingFace:</strong> <a href='https://huggingface.co/{model_id}' target='_blank'>https://huggingface.co/{model_id}</a></p>"
     
     # Add compatibility information
     if model_name in COMPATIBLE_MODELS:
         compatibility = COMPATIBLE_MODELS[model_name].get("compatibility_note", "Unknown")
         if COMPATIBLE_MODELS[model_name].get("is_incompatible", False):
-            info_text += f"Compatibility: ⚠️ {compatibility}\n"
+            html += f"<p><strong>Compatibility:</strong> ⚠️ {compatibility}</p>"
         else:
-            info_text += f"Compatibility: ✅ {compatibility}\n"
+            html += f"<p><strong>Compatibility:</strong> ✅ {compatibility}</p>"
     
     # Add file information if available
     if 'filename' in model_info:
         file_path = os.path.join(model_info['local_path'], model_info['filename'])
         if os.path.exists(file_path):
             size_mb = os.path.getsize(file_path) / (1024 * 1024)
-            info_text += f"File: {model_info['filename']} ({size_mb:.2f} MB)\n"
-            info_text += f"Status: Loaded"
+            html += f"<p><strong>File:</strong> {model_info['filename']} ({size_mb:.2f} MB)</p>"
+            html += f"<p><strong>Status:</strong> <span style='color:green'>Loaded</span></p>"
         else:
-            info_text += f"File: {model_info['filename']} (Not downloaded)\n"
-            info_text += f"Status: Not available"
+            html += f"<p><strong>File:</strong> {model_info['filename']} (Not downloaded)</p>"
+            html += f"<p><strong>Status:</strong> <span style='color:red'>Not available</span></p>"
+            # Add download instructions
+            html += f"<div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-top: 10px;'>"
+            html += f"<p><strong>Download Command:</strong></p>"
+            html += f"<code>curl -L {model_info.get('download_url', '')} -o {file_path}</code>"
+            html += f"</div>"
     
-    return info_text
+    html += "</div>"
+    return html
+
+# Add a function to handle file uploads
+def upload_and_process_file(files):
+    """Upload files to the knowledge directory and process them."""
+    if not files:
+        return "No files uploaded."
+    
+    try:
+        results = []
+        for file in files:
+            # Get the filename from the path (handle both string paths and file objects)
+            if isinstance(file, str):
+                source_path = file
+                filename = os.path.basename(file)
+            else:
+                source_path = file.name
+                filename = os.path.basename(source_path)
+            
+            # Create the target path in the knowledge directory
+            target_path = os.path.join("knowledge", filename)
+            
+            # Copy the file to the knowledge directory
+            import shutil
+            shutil.copy2(source_path, target_path)
+            
+            results.append(f"Uploaded: {filename}")
+        
+        # Process the knowledge base to include the new files
+        chatbot.process_knowledge_base()
+        results.append("\nKnowledge base processed with new files!")
+        
+        return "\n".join(results)
+    except Exception as e:
+        return f"Error uploading files: {str(e)}"
 
 # Create the Gradio interface
 with gr.Blocks(title="Industrial RAG Chatbot") as demo:
@@ -211,7 +278,7 @@ with gr.Blocks(title="Industrial RAG Chatbot") as demo:
                     label="Select Model (✅ = Compatible with this hardware)"
                 )
                 switch_btn = gr.Button("Switch Model")
-                model_info = gr.Textbox(label="Model Information", value=get_model_info(BEST_DEFAULT_MODEL), lines=10)
+                model_info = gr.HTML(get_model_info(BEST_DEFAULT_MODEL))
                 
                 # Function to clean model name (remove emoji prefix)
                 def clean_model_name(display_name):
@@ -238,14 +305,29 @@ with gr.Blocks(title="Industrial RAG Chatbot") as demo:
     with gr.Tab("Knowledge Base"):
         with gr.Row():
             with gr.Column(scale=1):
+                gr.Markdown("### Upload Documents")
+                gr.Markdown("Upload documents to add them to the knowledge base.")
+                file_upload = gr.File(
+                    file_count="multiple",
+                    label="Upload Files",
+                    file_types=[".pdf", ".docx", ".txt", ".png", ".jpg", ".jpeg"]
+                )
+                upload_btn = gr.Button("Upload and Process Files")
+                upload_output = gr.Textbox(label="Upload Results", lines=5)
+                
+                # Connect the upload button
+                upload_btn.click(upload_and_process_file, inputs=file_upload, outputs=upload_output)
+                
+            with gr.Column(scale=1):
                 gr.Markdown("### Process Documents")
-                gr.Markdown("Process documents in the 'knowledge' directory to make them searchable.")
+                gr.Markdown("Process existing documents in the 'knowledge' directory to make them searchable.")
                 process_btn = gr.Button("Process Knowledge Base")
                 process_output = gr.Textbox(label="Process Output", lines=2)
                 
                 # Connect the process button
                 process_btn.click(process_knowledge_base, inputs=None, outputs=process_output)
                 
+        with gr.Row():
             with gr.Column(scale=1):
                 gr.Markdown("### Clear Knowledge Base")
                 gr.Markdown("⚠️ This will delete all document embeddings from the vector store.")
@@ -273,13 +355,42 @@ with gr.Blocks(title="Industrial RAG Chatbot") as demo:
         
         for model_name, model_info in COMPATIBLE_MODELS.items():
             if not model_info.get("is_incompatible", False):
-                system_info += f"- ✅ **{model_name}**: {model_info.get('description', 'No description')}\n"
+                # Add HuggingFace link for local models
+                hf_link = ""
+                if "model_id" in model_info and model_info.get("family") != "openai":
+                    model_id = model_info["model_id"]
+                    if "/" in model_id:  # It's a HuggingFace model
+                        hf_link = f" - [HuggingFace](https://huggingface.co/{model_id})"
+                
+                system_info += f"- ✅ **{model_name}**: {model_info.get('description', 'No description')} ({model_info.get('compatibility_note', '')}){hf_link}\n"
         
         system_info += "\n### Potentially Incompatible Models\n"
         
         for model_name, model_info in COMPATIBLE_MODELS.items():
             if model_info.get("is_incompatible", False):
-                system_info += f"- ⚠️ **{model_name}**: {model_info.get('compatibility_note', 'Unknown issue')}\n"
+                # Add HuggingFace link for local models
+                hf_link = ""
+                if "model_id" in model_info and model_info.get("family") != "openai":
+                    model_id = model_info["model_id"]
+                    if "/" in model_id:  # It's a HuggingFace model
+                        hf_link = f" - [HuggingFace](https://huggingface.co/{model_id})"
+                
+                system_info += f"- ⚠️ **{model_name}**: {model_info.get('compatibility_note', 'Unknown issue')}{hf_link}\n"
+        
+        system_info += """
+### Multilingual Support
+This chatbot has the following language capabilities:
+
+- **Document Processing**: Fully multilingual support for documents in various languages
+- **OCR Language Detection**: Automatic language detection for scanned documents
+- **Query Processing**: Currently optimized for English queries
+- **Bidirectional Search**: Limited support for non-English queries (experimental)
+
+For best results:
+- Upload documents in any language (Spanish, English, etc.)
+- Ask questions in English for most reliable answers
+- Non-English queries may have reduced retrieval accuracy
+"""
         
         gr.Markdown(system_info)
 

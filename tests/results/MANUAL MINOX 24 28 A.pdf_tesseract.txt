@@ -1,0 +1,2668 @@
+7
+
+Instrucciones de uso y notas
+técnicas para la instalación
+
+Modelo
+MINOX 24A Mixta Atmosférica
+MINOX 28A Mixta Atmosférica
+
+A 11) MANAUT_/
+
+
+Le felicitamos por su elección.
+Su caldera es modulante con regulación electrónica.
+
+Los materiales que la componen y los sistemas de regulación de que está provista
+le ofrecen seguridad, confort elevado y ahorro energético así que Ud. podrá
+agradecer las ventajas de la calefacción autónoma.
+
+IMPORTANTE
+
+1“ El manual debe leerse atentamente, de este modo la caldera podrá utilizarse
+de manera racional y segura; debe conservarse en buenas condiciones, ya
+que podría ser necesario consultarlo en el futuro.
+
+En caso de que el aparato se traspase a otro propietario, se tendrá que entre-
+garle también este manual.
+
+1 El primer encendido debe ser efectuado por uno de los Centros de Asisten-
+cia Autorizados, mencionados en la lista adjunta al presente manual;
+da validez a la garantía a partir de la fecha en que se efectúa.
+
+1 El Constructor declina cualquier responsabilidad por eventuales traduccio-
+nes del presente manual de las que puedan derivar interpretaciones erró-
+neas; no puede ser considerada responsable por la inobservancia de las
+instrucciones contenidas en el presente manual y por las consecuencias de
+cualquier acción no específicamente descrita.
+
+DURANTE LA INSTALACION
+
+1 La instalación debe ser realizada por personal cualificado de modo que, ac-
+tuando con responsabilidad, sean respetadas las normas vigentes al respec-
+to.
+
+1 La caldera permite calentar el agua a una temperatura inferior a la de ebulli-
+ción;
+debe estar conectada a una instalación de calefacción y/o a una red de distri-
+bución del agua sanitaria, compatiblemente con su rendimiento y su poten-
+cia;
+deberá ser destinada sólo al uso para el cual ha sido expresamente prevista;
+no debe estar expuesta a los agentes atmosféricos;
+tampoco debe ser manejada por niños o personas no expertas; además:
+— evitar el uso incorrecto de la caldera;
+
+
+— evitar maniobras con los dispositivos sellados;
+- evitar el contacto con las piezas calientes durante el funcionamiento.
+
+DURANTE EL USO
+
+Está prohibido por ser peligroso obstruir aunque sea parcialmente las to-
+Mas de aire para la ventilación del local donde está instalada la caldera;
+
+el funcionamiento en el mismo habitáculo de aspiradores, chimeneas y simila-
+res, al mismo tiempo que la caldera;
+
+incorporar a la caldera un ventilador a fin de facilitar la evacuación de las hu-
+mos de la combustión.
+
+Las reparaciones deben ser efectuadas por uno de los Centros de Asistencia
+Autorizados utilizando repuestos originales, por lo tanto, limítese a desactivar
+la caldera (Véanse las instrucciones).
+
+Al percibir olor a gas:
+
+— no accionar interruptores eléctricos, el teléfono ni cualquier otro dispositivo
+que pueda producir chispas;
+
+— abrir en seguida las puertas y ventanas para crear una corriente de aire pu-
+rificando el cuarto;
+
+- cerrar los grifos del gas;
+
+solicitar la intervención de personal profesionalmente cualificado.
+
+Antes de poner en marcha la caldera, se aconseja hacer comprobar por
+personal profesionalmente cualificado, que la instalación de alimentación de
+gas:
+
+— es estanca;
+
+— está diseñada para el caudal necesario para la caldera;
+
+— está provista de todos los dispositivos de seguridad y control que disponen
+las normas vigentes;
+
+— asegurarse de que el instalador haya conectado la salida de la válvula de
+seguridad a un embudo de descarga.
+
+El Fabricante no se responsabiliza de los daños causados por la apertura de
+la válvula de seguridad y la consiguiente salida de agua, sino está conectada
+correctamente a una red de desague.
+
+No tocar el aparato con el cuerpo mojado o húmedo y/o los pies descalzos.
+
+En caso de trabajos o mantenimiento de estructuras ubicadas cerca de los
+conductos de humos y/o en los dispositivos de evacuación de los humos o
+sus accesorios, apagar el aparato y, una vez finalizado el trabajo, hacer com-
+probar su eficacia por personal cualificado.
+
+
+1 Descripción de la caldera . 1 5.8 Selección dela frecuencia de
+
+1.1 — Vista de conjunto ... 1 POONCSdIdO - ao ooccccoocccnono 17
+1.2 Cuadro de mandos 4 5.9 Modalidades de la bomba ....... 19
+1.3. Llave de calefacción y agua sanitaria 1 510 Configuración post—circulación 20
+1.4 Características generales ........ 1 o
+
+6 Preparacion para el funcionamiento 21
+
+2 Instrucciones de uso 2
+21 Advertencias "7 61 Secuencia delas operaciones... 21
+22 ENCOMIdO .occocccccccccccco 2 7 Pruebadelaregulaciondegas. 23
+2.3 Temperatura del circuito de calefacción 2 74 Advertencias 23
+2.4 Temperatura del agua sanitaria ... 3 72 Pruebadela presión de gas 23
+25 APAgadO coocccccccccociiccno 3 73. Regulación del encendido del
+
+3 Consejos utiles 5 quemador 24
+
+7.4 Regulación de la potencia útil en la
+
+3.1 - Llenado del circuito de calefacción — 5 función calefacción ............. 25
+3.2 Calefacción 5
+
+3.3 — Protección anticongelante . 5 8  Cambiodegas. 27
+3.4 Mantenimiento periódico ... 5 81 Advertencias ... 27
+3.5 Limpieza exterior 5 82 Operaciones ... 27
+3.6 — Funcionamiento incorrecto . 6 83 Configuración tipo gas . 27
+4 Características técnicas ....... 7 9 Mantenimiento ...ooocccccccooo 29
+4.1 Vistade conjunto... 7 94 Advertencias c.cooocccccccccoos 29
+4.2 — Esquema de principio . 8 9.2 Desmontaje de los paneles exteriores 29
+
+4.3 Esquema eléctrico. .
+
+9 9.3  Vaciado del circuito de agua sanitaria 29
+4.4 Datos técnicos MINOX 24A .
+
+10 9.4  Vaciado del circuito de calefacción 30
+4.5 Datos técnicos MINOX 28A . 11 9.5 Limpieza del intercambiador primario 30
+4.6 Característica hidráulica .... - 12 9.6 Prueba dela presurización del vaso de
+
+4.7 Vaso de expansión ...ooooocoooo 12 expansión para calefacción ...... 30
+
+Za 9.7 — Limpieza del intercambiador sanitario. 30
+5 Instalación .. 13 98 Limpieza del quemador ......... 30
+5.1 Advertencias . - 18 99 Dispositivo para el control de los
+
+5.2 Precauciones para la instalación . 13 humos... - 380
+5.3 — Instalación del soporte de la caldera 13 9.10 Prueba del rendimiento caldera ... 31
+5.4 — Montaje de la caldera 14 — 9.11 Regulación de la función deshollinador
+5.5 Conexiones eléctricas . 14 de la Caldera ..coooccococccoooo 31
+5.6 Dimensiones . 16 9:12 Configuraciones para el cambio de la
+
+5.7 Empalmes . 16 tarjeta de mando .
+
+Aparato en categoría Ilzw3+ (gas G20 20 mbar, G30 29 mbar, G31 37 mbar)
+País de destinación: ES
+
+Este aparato está conforme con las Directivas Europeas:
+e 90/396/CEE SEGURIDAD APARATOS A GAS
+e 92/42/CEE RENDIMIENTOS
++ 89/336/CEE EMC (COMPATIBILIDAD ELECTROMAGNETICA)
+e 73/23/CEE BAJA TENSION ELECTRICA
+
+El fabricante a fin de mejorar constantemente sus productos, se reserva el derecho de modificar los
+datos detallados en este manual en cualquier momento y sin previo aviso.
+Este manual es un soporte informativo y no se lo puede considerar como contrato ante terceros.
+
+
+
+E DESCRIPCIÓN DE LA CALDERA
+
+EX vista de conjunto
+
+El modelo y la matrícula de la caldera están im-
+presos en el certificado de garantía.
+
+fig. 1.1
+1 Panel de mando
+2 Registro de inspección del quemador
+
+KEN Cuadro de mandos fig. 1.3
+
+3 Indicadores luminosos de caldera alimentada
+eléctricamente y control del funcionamiento
+
+Regulación temperatura de agua sanitaria
+
+5 Conmutador de funcionamiento / Regulación
+temperatura de calefacción
+
+6 Botón de reposición de bloqueo caldera
+7. Indicador luminoso de bloqueo
+8 Termomanómetro del circuito de calefacción
+
+Llave de calefacción y agua
+sanitaria
+
+fig. 1.2 vista lado inferior
+
+9 Etiqueta que indica el tipo de gas
+
+10 Grifo de ida calefacción
+
+11 Tramo de salida agua sanitaria
+
+12 Tramo de gas
+
+13 Grifo de entrada agua sanitaria
+
+14 Grifo de retorno calefacción
+
+15 Grifo de rellenado circuito de calefacción
+
+KEN características generales
+
+Para las características técnicas dela caldera con-
+súltese el capítulo 4.
+
+() MANAUT
+MINOX
+
+fig. 1.3
+
+
+
+EM INSTRUCCIONES DE USO
+
+EXI Aovertencias
+
+Compruebe que el circuito de calefacción está
+regularmente lleno de agua aunque la caldera
+sirva sólo para la producción de agua caliente
+sanitaria.
+
+De no ser así, llénelo debidamente, vea el
+párrafo 3.1 en pág. 5
+
+Todas las calderas están dotadas de sistema
+
+*anticongelación” que actúa si sutemperatura
+llega por debajo de 4*C; portanto no desacti-
+ve la caldera.
+
+En caso de que no utilice la caldera en las tem-
+poradas frías, con consiguiente riesgo de con-
+gelación, realice lo que está indicado en el pá-
+rrafo 3.8 en pág.5
+
+Encendido
+
+1. Los grifos de la caldera deben estar abiertos
+fig. 2.1
+
+Posición de abierto
+
+fig. 2.1 vista lado inferior
+
+2 Suministrar fluido eléctrico a la caldera accio-
+nando el interruptor bipolar dispuesto en la
+instalación;El indicador luminoso 3 en fig. 2.2
+hace un breve centelleo cada 4 segundos
+aproximadamente.
+
+Funcionamiento de la caldera para calefac-
+
+ción/agua sanitaria
+
+3 Colocar el conmutador 5 como en la fig. 2.2; el
+indicador luminoso 3 centellea por intermiten-
+cia de aproximadamente dos segundos.
+
+fig.2.2
+
+Funcionamiento de la caldera para la sola pro-
+
+ducción de agua caliente
+
+4. Colocar el conmutador 5 como en la fig. 2.3; el
+indicador luminoso 3 centellea por intermiten-
+cia de aproximadamente dos segundos.
+
+fig. 2.3
+
+EEN Temperatura del circuito de
+calefacción
+
+minima ¿PO
+
+Máxima
+
+fig. 2.4
+
+
+
+Instrucciones de uso
+
+La temperatura de alimentación del agua de cale-
+facción se puede regular desde un mínimo de
+38”C aproximadamente hasta un máximo de
+aproximadamente 80”C, girando el mando repre-
+sentado en la fig. 2.4
+
+n de la temperatura de calefacción
+en función de la temperatura exterior.
+Colocando el mando como está indicado a conti-
+nuación:
+
+De5at5*C Entre —5
+
+Inferior
+a-5%C
+fig.25
+
+Suinstalador cualificado le podrá aconsejar las re-
+gulaciones más idóneas para su instalación.
+
+El termomanómetro 8 en pág. 1 sirve para averi-
+guar si se ha alcanzado la temperatura programa-
+da.
+
+EXE Temperatura del agua
+sanitaria
+
+Máxima
+
+fig. 2.6
+
+La temperatura del agua caliente sanitaria que sa-
+le dela caldera se puede regular desde un mínimo
+de aproximadamente 35 ”C hasta un máximo de
+aproximadamente 55 *C, girando el mando repre-
+sentado en la fig. 2.6
+
+Regulación
+
+Regule la temperatura del agua sanitaria en un va-
+lor adecuado para sus exigencias.
+
+Reduzca la necesidad de mezclar el agua caliente
+con la fría,
+
+De esta forma apreciará las características de la
+regulación automática.
+
+Si la dureza del agua es especialmente elevada,
+
+le aconsejamos regule la caldera en unas tempe-
+raturas inferiores a 50” C fig. 2.7
+
+fig. 2.7
+
+En estos casos le aconsejamos que incorpore un
+suavizador a la instalación de agua sanitaria.
+
+Si el caudal máximo del agua caliente sanitaria es
+demasiado elevado, tal que no permita alcanzar
+una temperatura suficiente, hacer instalar el
+específico limitador de caudal por el Técnico del
+Servicio de Asistencia Autorizada
+
+Pal Apagado
+
+Para apagar la caldera colocar el conmutador 5
+como está representado en lafig. 2.8; el indicador
+luminoso 3 hace un breve centelleo cada 4 segun-
+dos aproximadamente.
+
+fig. 2.8
+
+En caso de que no se vaya a utilizar la caldera du-
+rante un largo plazo:
+
+1 Cortar la alimentación eléctrica hacia la calde-
+ra;
+
+
+
+Instrucciones de uso
+
+2. cerrarla llave de alimentación del gas y los gr 3. de ser necesario, realice el vaciado de las cir-
+fo de la instalación hidráulica fig. 2.9; cuitos hidráulicos, vea el párrafo 9.3 y 9.4 en
+pág. 30
+
+Posición de cerrado
+
+fig. 2.9 vista lado inferior
+
+
+
+El CONSEJOS UTILES
+
+Llenado del circuito de
+calefacción
+
+a
+Tóerado Rd
+
+fig. 3.1 vista lado inferior
+
+Desatornillar el grifo de rellenado 15 en la fig. 3.1
+que se encuentra bajo la caldera y al mismo tiem-
+po comprobar la presión del circuito de calefac-
+ción con el termomanómetro 8 en la fig. 3.2
+
+98
+
+Presión
+V =1bar
+
+fig. 3.2
+La presión debe estar incluida entre 1 y 1,5 bar.
+
+Finalizada esta operación, cerrar el grifo de llena-
+do.
+
+De ser necesario, purgar el aire en los radiadores.
+
+Calefacción
+
+Para un funcionamiento racional y económico ins-
+talar un termostato de ambiente.
+
+No cerrar nuncael radiador en el cuarto donde es-
+tá instalado el termostato de ambiente.
+Siunradiador (o un convector) nose calienta, pur-
+gar el aire en la instalación y comprobar que el gri-
+fo correspondiente está abierto.
+
+Si la temperatura ambiente es demasiado eleva-
+da, no hay que actuar sobrelos grifos de losradia-
+dores, sino bajar la temperatura de calefacción
+mediante el termostato de ambiente o el mando
+
+regulación temperatura de calefacción 5 en la
+fig. 3.8
+
+fig. 3.3
+
+EEN Protección anticongelante
+
+Todas las calderas están dotadas de un sistema
+“anticongelante” que actúa en caso de que su
+temperatura llegue por debajo de 4*C; portanto,
+tratándose de unos breves plazos de inactividad
+y en condiciones de hielo posible, no desactivar
+la caldera.
+
+En caso de que se desactive la caldera, mandar
+realizar por un técnico cualificado el vaciado dela
+caldera (circuito de calefacción y agua sanitaria)
+y el de la instalación de calefacción y agua sanita-
+ría.
+
+EXE Wantenimiento periódico
+
+Para un funcionamiento eficiente y regular de la
+caldera, se aconseja llevar a cabo una vez al año
+como mínimo su mantenimiento y limpieza por
+parte de un Técnico del Servicio de Asistencia Au-
+torizado.
+
+Durante la revisión, se deben controlar y limpiar
+los componentes más importantes de la caldera.
+Este control se puede efectuar en el marco de un
+contrato de mantenimiento.
+
+EEN Limpieza exterior
+
+Antes de efectuar cualquier operación de limpie-
+za, desconectar el aparato de la red eléctrica ac-
+tuando sobre el interruptor bipolar dispuesto enla
+instalación.
+
+Para limpiar los paneles exteriores, utilizar un pa-
+ño humedecido con agua y jabón.
+
+No use: Disolventes, sustancias inflamables, sus-
+tancias abrasivas.
+
+
+
+Consejos útiles
+
+EXE Funcionamiento incorrecto
+
+La caldera no funciona, el indicador luminoso
+7 de la fig. 3.4 está encendido.
+
+La caldera ha actuado el dispositivo de seguridad.
+Para restablecer el funcionamiento de la caldera
+
+es necesario apretar el botón de reposición 6 en
+la fig. 3.4
+
+fig. 3.4
+
+El bloqueo de seguridad frecuente se debe
+señalar al Centro de Asistencia Autorizado.
+
+Ruido de burbujas de aire.
+
+Verificar la presión con el termomanometro 8 en la
+fig. 3.2, y rellenar si necesario consúltese el párra-
+103.1
+
+Presión baja del termomanómetro 8 de la
+fig. 3.2
+
+Volver a añadir agua en la instalación de calefac-
+ción.
+
+Para realizar la operación, hace falta referirse a el
+párrafo 3.1
+
+La prueba periódica dela presión en la instalación
+de calefacción está a cargo del usuario.
+
+Si las adiciones de agua fueran demasiado fre-
+cuentes, hacer controlar que no hay pérdidas de-
+bidas a la instalación de calefacción o a la propia
+caldera por el servicio de asistencia técnica.
+
+Sale agua por la válvula de seguridad A de la
+fig. 3.1
+
+Controlar que el grifo de llenado 15 en la fig. 3.1
+está cerrado perfectamente.
+
+Controlar en el termomanómetro 8 en la fig. 3.2
+que la presión del circuito de calefacción no esté
+próxima a 3 bar; en este caso se aconseja descar-
+gar parcialmente el agua de la instalación a través
+delas pequeñas válvulas de purga de los radiado-
+res a fin de llevar la presión a un valor regular.
+
+El indicador luminoso 3 de la fig. 3.5 centellea
+rápidamente.
+
+fig. 3.5
+
+La caldera está dañada; contactar con el Centro
+de Asistencia Autorizado para su revisión
+
+Encaso de averías diferentes de las menciona-
+das, apagar la caldera según lo detallado en el
+párrafo 2.5 en pág. 3 y contactar con el Técnico
+del Servicio de Asistencia Autorizado.
+
+
+
+EW CARACTERÍSTICAS TÉCNICAS
+
+EX vista de conjunto
+16 17 o 18
+
+J
+
+31 30 26 25 24 23 22 21 20 19
+fig. 4.1
+10 Grifo de ida calefacción
+
+11 Tramo de salida agua sanitaria
+12 Tramo de gas
+
+13 Grifo de entrada agua sanitaria
+
+14 Grifo de retorno calefacción
+
+15 Grifo de rellenado circuito de calefacción
+16 Campana cortaviento
+
+17 Dispositivo de control de los humos
+
+18 Termostato de seguridad
+
+19 Sonda NTC agua sanitaria
+
+20 Grifo de vaciado circuito primario
+
+21 Válvula de seguridad de 3 bar
+
+22 Tapón de purga bomba de circulación
+23 Bomba de circulación
+
+24 Válvula de purga automática
+
+25 Detector de caudal agua sanitaria
+
+26 Válvula de gas modulante
+
+27 Actuador modulante
+
+28 Toma de presión salida válvula de gas
+29 Toma de presión de entrada válvula de gas
+30 Detector de caudal calefacción
+
+31 Sonda NTC calefacción
+
+32 Válvula de tres vías
+
+INSTALACIÓN
+
+33 Obturador válvula de tres vias
+
+34 Electrodo de detección de la llama
+35 Electrodos de encendido
+
+36 Quemador
+
+37 Cámara de combustión
+
+38 Intercambiador circuito primario
+39 Intercambiador sanitario
+
+40 Vaso de expansión
+
+41 By-pass
+
+42 Filtro de agua sanitaria
+
+43 Limitador especial de caudal (accesorio)
+
+* Paratener acceso ala placa, retirar el panel frontal de la carcasa así como está detallado en el capítulo
+
+Mantenimiento.
+
+
+
+INSTALACIÓN
+
+Características técnicas
+
+EY Esquema de principio
+
+UE
+
+16
+
+a
+
+Qu
+
+l = 39
+36 LR — AA
+| +
+24 [| _)
+=3) Es
+35 34 23
+2817 318
+27d | 26 ! soN e
+2 33 25 |
+sap pe HA EN
+la 19
+21
+mal "5 15 J
+12 Ata 10% 13% 11
+
+fig. 4.2
+
+
+
+Características técnicas
+
+Esquema eléctrico
+Almentación Temostato —— Termostato Etectodode  Electodosde
+ess amos En dección” encendido
+segúfna o
+Temostato
+
+de ambiente Lg N
+
+a
+000 move
+
+INSTALACIÓN
+
+Válvula de gas
+
+NTO Detector NTC Detector
+agua sanitaria decaudal — calefacción de caudal
+agua sanitaria calefacción
+Válvula de
+tres vías
+Bomba
+a = anaranjado g=amarlo  m=marón
+b = blanco gr= grs r=rojo
+o = celeste n= negro lv = amarillo -verde
+
+fig. 4.3
+
+
+
+Características técnicas
+
+EX Datos técnicos MINOX 24A
+
+Inyectores N S
+Capacidad calorífica nom. KW 26,6 Natural G20 12130
+kcal/h 22871 Butano G30 12 77
+Capacidad calorífica mín. — KW 11,0 | [Propano 631 12 77
+kcal/h 9 458
+Potencia útl máxima 77 24,0 | [Presión de alimentación de gas
+kcal/h 20 635 m7 z
+_—_—— Gas nor. mín. máx
+Potencia útil mínima 07] 9,3
+kcallh 7006 | [Natural Pa 2000 1700 2500
+z G20 'mbar 20 17 25
+Ne] [caler
+E] O - Butano Pa 2900 2000 3500
+Ed [Temp máxima do ojercicio_"0 85] l6%0 mba 29 20 35
+ES Temp. de regulación e 38-80 Propano Pa 3700 2500 4500
+lr] | Presión máxima kPa 300| | mbar 37 25 45
+Zz bar 3
+Presión mínima KPa 30| naoseiemicos
+bar 0,3 >
+Prevalencia disponible kPa 20 Tensión v= 280
+(a 1000 1/h) bar ozo | [Frecuencia Hz 50
+*A la Potencia Útil mínima Potencia eléctrica w 95
+Grado de protección IPX4D
+
+Agua sanitaria
+
+Temperatura máxima Ñ 55
+
+Temperatura mínima “C 35 | [Caldera tipo B11as
+
+Presión máxima KPa 1000 | [Temperatura máx. humos "e 115
+bar 10 Temperatura mín. humos "Cc 85
+
+Presión mínima kPa 30 | [Capacidad de masa máx. de  kg/s 0,0204
+
+_ bar 03 los humos
+Caudal méx. Cr 33 8 lin e Capacidad de masa mín. de —Kg/s 00172
+Caudal mínimo min 25
+
+Capacidad de masa máx. aire kg/s 0,0199
+
+Capacidad de masa mín. aire kg/s 0,0170
+
+G 20 Hi 34,02 MJ/m? (15 *C, 1013,25 mbar)
+G30 Hi 45,65 MJ/kg (15 *C, 1013,25 mbar)
+
+Natural G20 mé/n 2,82 * Valores correspondientes a las pruebas con chi-
+'menea de 1 m y gas Natural G20.
+
+Butano G30 kg/h 2,09
+
+Propano G31 kg/h 2,06 Otras características
+
+Caudal mínimo de gas Alto mm 703
+
+Natural G20 m3 1,16 Ancho mm 400
+
+Butano G30 kg/n 0,87 Profundidad mm 325
+
+Propano G31 kg/h 0,85 Peso kg 32
+
+9 conducto de humos mm 130
+
+G31 Hi 46,34 MJ/kg (15 *C, 1013,25 mbar)
+1 mbar corresponde a 10 mm H20 aproximada-
+mente.
+
+
+
+Características técnicas
+
+EE datos técnicos MINOX 28A Inyectores y o
+Capacidad calorífica nom. KW 31,1 Natural G20 da 130
+kcal/h 26740 Butano G30 14 77
+Capacidad calorífica mín. — KW 13,0 | [Propano G31 14 77
+kcal/h 11177
+Potencia útl máxima 77 28,0 | [Presión de alimentación de gas
+kcal/h 24 074 m7 z
+_—_—— Gas nor. mín. máx
+Potencia útil mínima 07] 11,1
+kcalih osas | [Natural Pa 2000 1700 2500
+G20 mbar 20 17 25 z
+Calor o
+ataco Butano Pa 2900 2000 3500 [Ps
+Temp. máxima de ejercicio. "O 85] |60 mbar 29 20 os [E
+Temp. de regulación e 38-80 Propano Pa 3700 2500 4500 [PES
+Presión máxima kPa 300| | mbar 37 25 as IEA
+bar 3 Zz
+Presión mínima KPa 30| naoseiemicos
+bar 0,3 >
+Prevalencia disponible kPa 20 Tensión v= 280
+(a 1000 1/h) bar ozo | [Frecuencia Hz 50
+*A la Potencia Útil mínima Potencia eléctrica w 95
+Grado de protección IPX4D
+Agua sanitaria
+Temperatura máxima "c 55
+Temperatura mínima "c 35 | [Caldera tipo B11as
+Presión máxima kPa 1000 | [Temperatura máx. humos “C 130
+bar 10 Temperatura mín. humos “Cc 100
+Presión mínima kpa 30 | [Capacidad de masa máx. de Kgs 0,0196
+bar 03 los humos
+Caudal máx. (AT =25K) — min 16,1 - -
+73% 3 a 1% | [Capacidad de masa mín. de — kg/s 0,0176
+los humos
+Caudal mínimo Umin 25 Capacidad de masa máx. aire kg/s 0,0190
+Capacidad de masa mín. aire kg/s 0,0173
+Natural G20 m/h 3,29 * Valores correspondientes a las pruebas con chi-
+menea de 1 m y gas Natural G20.
+Butano G30 kg/h 2,45
+Propano G31 kg/h 2,41 Otras características
+Caudal mínimo de gas Alto mm 703
+Natural G20 men 137 | [Ancho mm 400
+Butano G30 kg/h 102 | [Profundidad mm 325
+Propano G31 kg/h 1,00 Peso kg 34
+G 20 Hi 34,02 M/m3 (15 *C, 1013,25 mbar) 2 conducto de humos mm 130
+
+G30 Hi 45,65 MJ/kg (15 *C, 1013,25 mbar)
+
+G31 Hi 46,34 MJ/kg (15 *C, 1013,25 mbar)
+1 mbar corresponde a 10 mm H20 aproximada-
+
+mente.
+
+11
+
+
+INSTALACIÓN
+
+Características técnicas
+
+EN característica hidráulica
+
+kPa bar
+60.06
+
+50.05
+
+40.04
+
+30.03
+
+2002
+
+10 0.1
+
+000
+
+O 200 400 600 800 1000 1200 1400
+
+Un
+
+fig. 4.4
+
+La característica hidráulica de la fig. 4.4 represen-
+tala presión (prevalencia) disponible para la insta-
+lación de calefacción en función del caudal
+
+Ya se ha restado la pérdida de carga de la caldera.
+
+Caudal con los grifos termostáticos cerrados.
+La caldera está provista de un bypass automáti-
+
+co 41 en pág. 7, que actúa como protector del in-
+tercambiador primario.
+
+En caso de una excesiva disminución o de la para-
+da total de la circulación de agua en la instalación
+de calefacción, debido al cierre de las válvulas ter-
+mostáticas o de los grifos de los elementos del cir-
+
+cuito, el by-pass garantiza la circulación mínima
+de agua dentro del intercambiador primario.
+
+El by-pass está ajustado para una presión difer-
+encial de 3-4 m.c.a. aproximadamente.
+
+EXA vaso de expansión
+
+La diferencia de altura entre la válvula de seguri-
+dad y el punto más alto de la instalación puede ser
+de 7 metros como máximo.
+
+Para diferencias superiores, aumentar la presión
+de precarga del vaso de expansión 40 en pág. 7
+y de la instalación en frío 0,1 bar por cada aumen-
+to de 1 metro.
+
+Capacidad total ] 6,0
+
+Presión de precarga kPa 100
+bar 1,0
+
+Capacidad útil ] 3,0
+
+Contenido máximo de
+
+agua en la instalación * 1 104
+
+tab. 4.1
+
+* Con las siguientes condiciones:
+
+- Temperatura media máxima de la instalación
+80"C
+
+- Temperatura inicial al llenarse la instalación
+10"C
+
+Para las instalaciones cuyo contendido es superi-
+
+or a 104 |, es necesario disponer un vaso de ex-
+pansión adicional
+
+12
+
+
+EM INSTALACIÓN
+
+EXIY Advertencias
+
+El aparato debe evacuar los productos de la
+combustión en una chimenea de segura efica-
+cia o, a falta de ésta, directamente al exterior.
+La caldera se debe instalar cerca del conducto
+para la evacuación de los humos.
+
+Si se instala la caldera al interior, el ambiente
+debe estar provisto de la regular toma de aire
+para la ventilación del local
+
+Para el buen funcionamiento del quemador la
+renovación de aire mínima necesaria debe ser
+de 2 m*/h por cada kW de capacidad térmica
+
+Comprobar:
+
+— que la caldera es adecuada para el tipo de
+gas distribuido (véase la placa adhesiva).
+Én caso de que sea necesario adaptar la
+caldera a un diferente tipo de gas, véase el
+capítulo cambio de gas en pág. 27;
+que las características de las redes de ali-
+mentación eléctrica, hídrica, de gas corres-
+pondan a aquéllas indicadas en la placa;
+
+Para los gases de petróleo, la instalación debe
+
+también ser conforme con lo que dispone la
+
+compañía suministradora y cumplir con los re-
+
+quisitos de las normas técnicas y las leyes vi-
+
+gentes.
+
+La válvula de seguridad se debe conectar con
+
+un conducto de desagúe adecuado para evitar
+
+inundaciones en caso de que ésta actúe.
+
+La instalación eléctrica debe cumplir con las
+
+normas técnicas, en especial
+
+- lacaldera debe estar obligatoriamente co-
+nectada contierra en la instalación eléctrica
+mediante el borne específico;
+cerca de la caldera se debe incorporar un
+interruptor omnipolar con una distancia de
+apertura de los contactos de 3 mm como
+mínimo. Para las conexiones eléctricas,
+véase el párrafo 5.5 de este mismo capítulo.
+
+EXN Precauciones para la
+instalación
+
+Para la instalación, hay que cumplir con las si-
+guientes prescripciones:
+
+= La caldera debe estar fijada en una pared ro-
+busta.
+
+- La caldera nunca debe estar instalada sobre
+una cocina u otro equipo de cocción, lavado-
+ras, lavavajillas ni fregaderos.
+
+- Deje alrededor del equipo las distancias míni-
+mas indicadas en la fig. 5.1
+
+10
+
+25 25
+
+Todas las medidas
+
+fig. 5.1
+
+- Deje 6 cm de espacio libre delante de la cal-
+dera, mientras que la parte de arriba debe es-
+tar libre de obstáculos en caso de
+incorporación en un mueble, una protección,
+una hornacina.
+
+- Realice laregular toma de aire para la combus-
+tión.
+
+- Encaso de una instalación de calefacción anti-
+gua, antes de instalar la caldera, efectuar una
+limpieza esmerada, para eliminar los depósi-
+tos de barro que se hubieran producido a lo
+largo del tiempo.
+
+- Es aconsejable equipar la instalación con un
+
+filtro de decantación o utilizar un producto
+para el acondicionamiento del agua que circu-
+la en ella.
+Esta última solución en especial, además de
+limpiar la instalación, efectúa una operación
+anticorrosiva, favoreciendo la formación de
+una capa protectora sobre las superficies
+metálicas y neutraliza los gases presentes en
+el agua.
+
+- El equipo está clasificado según las modali-
+dades de evacuación de los productos de la
+combustión en: B11BS. Para las característi-
+cas véase la secc. 9.9 en pág. 30
+
+Instalación del soporte de la
+caldera
+
+Para las medidas y los datos útiles, véase también
+
+las secciones 5.6 y 5.7
+
+La caldera está equipada con un soporte que
+sirve para el montaje.
+
+13
+
+INSTALACIÓN
+
+
+INSTALACIÓN
+
+Instalación
+
+Está disponible una plantilla de papel (suministra-
+da) conteniendo todas las medidas e informa-
+ciones para la instalación correcta del soporte.
+
+Predisponer en el tubo de alimentación gas a
+la caldera una válvula de cierre, según regla-
+mentación aparatos de gas.
+
+EXI Wontaje de la caldera
+
+1 Quitar los tapones de protección de las tube-
+rías de la caldera.
+
+fig. 5.2
+2 Montar la caldera su el soporte.
+3 Enroscar los grifos en la caldera.
+
+4. Fije los trozos de tubo abocados en la instala-
+ción hidráulica.
+
+fig. 5.3
+
+5 Proceder alempalme delas tuberías utilizando
+las juntas originales suministradas con los gri-
+
+tos. Se recomienda apretar bien los empalmes
+hidráulicos y de gas fig. 5.2.
+
+6 Realizar la prueba de estanquidad de la insta-
+lación de alimentación de gas.
+
+7_ Conectar la descarga de la válvula de seguri-
+dad 21 en la fig. 5.3 a un cono de desagúe.
+
+EX Conexiones eléctricas
+
+Retirar el panel frontal de la caldera, así como está
+indicado en el capítulo mantenimiento, párrafo 9.2
+
+fig. 5.4
+Aflojar los cuatro tornillos indicado en fig. 5.4
+
+Saque frontalmente el panel de mandos para te-
+ner acceso a la bornera de alimentación fig. 5.5
+
+fig. 5.5
+
+Aflojar los tornillos y retirar la tapa de la bornera
+fig. 5.6
+
+
+
+Instalación
+
+fig. 5.6
+
+Conexión a la red de alimentación eléctrica
+acia etintermptor L YN
+
+alimentación
+eléctrica
+
+Bornera
+termostato
+ambiente
+
+fig. 5.7
+
+1 Conectar el cable de alimentación eléctrica
+procedente del interruptor bipolar a la bomera
+de alimentación eléctrica de la caldera fig. 5.7,
+respetando la correspondencia de la línea
+(hilo marrón) y del neutro (hilo azul).
+
+2 Conectar el hilo de tierra (amarillo/verde).
+El hilo de tierra debe ser mas largo que los
+hilos de la alimentación eléctrica.
+
+El cable o hilo de alimentación eléctrica del apara-
+
+to, debe ser de sección no inferior a 0,75 mm? y
+
+en todo caso cumplir con las normas técnicas.
+
+Conexión de un termostato de ambiente.
+
+Para la conexión de un termostato de ambiente a
+la caldera, utilizar la bornera de termostato am-
+biente fig. 5.7
+
+Los conductores eléctricos del termostato de am-
+biente se deben conectar entre los bornes “1 y 3”.
+
+Conectando cualquier clase de termostatos de
+ambiente, se debe quitar el puente eléctrico
+entre 1 y 3.
+
+Cuidar que no se conecten cables bajo tensión
+en los bornes 1 y 3.
+Contactos de posición de el
+termostato ambiente
+
+LON
+
+MN PSA
+
+Bomera
+alimentación
+eléctrica
+
+Bornera
+termostato
+ambiente
+
+fig. 5.8
+El termostato debe estar incluido en la clase de
+aislamiento 11 ([E] ) o estar conectado correcta-
+mente con tierra.
+
+Conexión de válvulas de zona controladas por
+un termostato ambiente
+
+Para la conexión de las válvulas de zona, use la
+bornera del termostato ambiente de la caldera
+Los conductores eléctricos de los contactos del
+micro de posición de la válvula de zona se inser-
+tan en los bornes “1 y 3” de la bornera del termos-
+tato ambiente, como en fig. 5.9.
+
+15
+
+INSTALACIÓN
+
+
+Instalación
+
+Contactos del micro de posición de la
+válvula de zona
+
+Válvula de zona con termostato
+micro contactos ambiente
+T
+
+INSTALACIÓN
+
+Bornera
+termostato
+ambiente
+
+fig. 5.9
+
+Se debe quitar el puente eléctrico entre 1 y 3.
+Cuidar que no se conecten cables bajo tensión
+en los bornes 1 y 3.
+
+hacia el termostato hacia el interruptor
+de ambiente bipolar
+
+fig. 5.10
+
+El recorrido del cable o de los hilos de alimenta-
+ción eléctrica dela caldera y del termostato de am-
+biente debe ser el que está representado en la
+fig. 5.10
+
+ES Dimensiones
+
+ecenduco
+Ejo conducto unos
+E Bjecaldera de humos
+os, os] 109
+EIN E
+23 |
+Í NN) 1
+| 1
+| Soporte dela I
+o í
+18 1
+agua! / 1
+| e pros Se |
+3 Raloimo
+1d se | a! el ;
+400 325
+Todas las medidas se dan en mm.
+fig. 5.11
+Empalmes
+Sigla | Grifo g tubo
+IC G 3/4 MF 016/18
+ACS 013/15
+Gas 016/18
+ASF [G1/2MF 013/15
+RC G 3/4 MF 016/18
+Racord de la válvula de seguridad de 3 bar G1/2 F
+Nota: con las letras "M” y "F” se entienden las
+Uniones macho o hembra lado instalación.
+
+tab. 5.1
+
+
+
+Instalación
+
+reencendido
+
+Cuandola caldera funciona en calefacción con ré-
+gimen encendido / apagado, el tiempo mínimo
+entre dos encendidos está configurado como pre-
+determinado en fábrica en, aproximadamente, 1
+minuto y medio (88 segundos).Es posible variar
+este tiempo desde un mínimo de cero a un máxi-
+mo de 4 minutos y 15 segundos (255 segundos).
+
+Leyenda LED
+
+O Luzapagado  (): Luz parpadea
+
+Luz parpadea
+Y alternativamen-
+Dd: te con otro pilo-
+10
+
+Luz encendida
+O ia
+
+fig. 5.12
+
+Para mirar los indicadores luminoso (LED en
+fig. 5.13), presente al interno del cuadro de man-
+dos,realizar las operación como está indicado.
+
+000000
+
+ep 1
+
+dl 3
+
+O Hr
+
+€
+fig. 5.13
+1 Aflojar los tornillos ”A”. Retirar el panel frontal
+
+desplazándolo hacia arriba de modo que se
+suelte de los ganchos de abajo fig. 5.14
+
+WN
+
+INSTALACIÓN
+
+fig. 5.14
+
+2 Aflojarlos tornillos "A' fig. 5.15 y quitar los dos
+paneles laterales, empujándolos hacia arriba
+de modo que se suelten de los ganchos super-
+ior
+
+fig. 5.15
+
+3 Saque frontalmente el panel de mandos para
+tener acceso a la bornera de alimentación
+
+4. Aflojarlostornillos y retirarla tapa de la bornera
+fig. 5.16
+
+
+
+INSTALACIÓN
+
+Instalación
+
+fig. 5.16
+
+5 Alimentar eléctricamente la caldera, mediante
+el accionamiento del interruptor bipolar previs-
+to en la instalación; la lámpara de señalación
+bloqueo centelleará cada 4 segundos.
+
+6 Posicionar el selector de función / manopla de
+regulación temperatura calefacción, como se
+indica en fig. 5.17
+
+4
+
+Eh le
+
+fig. 5.17
+
+7 Mantener presionado el pulsador de restable-
+cimiento caldera durante, aproximadamente,
+10 segundos; la lámpara de bloqueo comen-
+zará a centellear
+
+8 Para configurar el tiempo de frecuencia de
+reencendido, los indicadores luminosos se de-
+ben visualizar como se indica en fig. 5.18.
+
+e 00
+
+fig. 5.18
+
+9 Enelcaso que no se visualizare esta secuen-
+cia, hay que presionar el pulsador de restable-
+cimiento tantas veces como sea necesario
+hasta lograr la visualización.
+
+10 Para visualizar la configuración programada,
+hay que mantener presionado el pulsador de
+restablecimiento durante, aproximadamente,
+5:segundos. Los indicadores luminosos de se-
+
+Configuración frecuencia
+de reencendido
+
+ñalación centellearán un número de veces
+equivalente a la configuración.
+
+11 Para cambiarla configuración, hay que girar la
+manopla de regulación temperatura sanitarios
+en fig. 5.19 y posicionarla en el tiempo previa-
+mente elegido, (en la figura ejemplo manopla
+configurada para Frecuencia de reencendido
+de 1 minuto y 25 segundos); la lámpara de se-
+ñalación bloqueo centellea velozmente.
+
+130
+85 175
+4
+af? 5 213
+2 to 06
+o mt A 17255
+Segundos
+
+N? Configuración
+fig. 5.19
+
+12 Para llevar a cabo la memorización de la confi-
+guración, hay que mantener presionado el
+pulsador de restablecimiento caldera durante,
+aproximadamente, 5 segundos; todos los indi-
+cadores luminosos de señalación centellearán
+simultáneamente, como se describe en
+fig. 5.20
+
+ZO: Confirmación memorización
+
+fig. 5.20
+
+Posicionar el selector como se indica en fig. 5.21
+para salir de la programación
+
+3 5
+ES
+Bm
+o
+Q
+*
+o
+fig. 5.21
+
+18
+
+
+Instalación
+
+EX vodalidades de la bomba
+
+La bomba, durante la calefacción, está configura-
+da para su funcionamiento bajo control del ter-
+mostato ambiente en modo TA. Esta
+configuración puede cambiarse a modo ON
+(bomba siempre en funcionamiento).
+
+1 Suministrar fluido eléctrico a la caldera y colo-
+car el conmutador de función 5 igual que en la
+fig. 5.22.
+
+fig. 5.22
+
+2 Mantener pulsado el botón de reposición (6)
+durante 10 segundos, aproximadamente, has-
+ta que el indicador luminoso de bloqueo (7)
+comience a parpadear.
+
+Nota: durante su regulación, la caldera no funcio-
+
+nani produciendo agua sanitaria ni como calefac-
+ción.
+
+3. Pulsar el botón de reposición (6, fig. 5.22) de
+forma repetida (3 veces) hasta que los indica-
+dores luminosos de señalación (3) muestren
+una secuencia como la de fig. 5.23.
+
+O O 60 Modalidad bomba
+fig. 5.23
+
+Para mostrar la configuración determinada, man-
+tener pulsando el botón de reposición (6,
+fig. 5.24) durante 5 segundos aproximadamente.
+Los indicadores luminosos de señalación (3) par-
+padearán un número de veces igual a la configu-
+ración (en fig. 5.25, por ejemplo, parpadean 1
+vez).
+
+Modalidad
+bomba ON
+TA 4 a
+ES
+fig. 5.25
+
+4. Para cambiar la configuración, girar el mando
+de regulación de temperatura del agua sanita-
+ria (4, fig. 5.22) y llevarlo al valor de funciona-
+miento de la bomba deseado. El indicador
+luminoso de bloqueo (7) parpadeará rápida-
+mente para indicar que se está modificando la
+modalidad bomba.
+
+5 Para memorizar la configuración, pulsar elbo-
+tón de reposición (6) durante '5 segundos
+aproximadamente, hasta que los indicadores
+luminosos de señalación 3 parpadeen simul-
+táneamente como en fig. 5.26.
+
+(Of Memorización realizada
+
+fig. 5.26
+
+6 Paradevolverala caldera a su funcionamiento
+habitual, poner el conmutador de función (5) a
+cero. En cualquier caso, la caldera vuelve a su
+funcionamiento habitual después de 10 minu-
+tos.
+
+El valor por defecto de modo de la bomba es TA.
+
+INSTALACIÓN
+
+
+INSTALACIÓN
+
+Instalación
+
+EXT] Configuración
+post-circulación de la bomba
+
+La bomba, cuando funciona en calefacción, está
+configurada para una post=circulación de un mi-
+nuto cada vez que termina una demanda de calor.
+Este tiempo puede cambiar desde un mínimo de
+cero hasta un máximo de cuatro minutos y 15 se-
+gundos (255 segundos).
+1 Suministrar fluido eléctrico a la caldera y colo-
+car el conmutador de función 5 igual que en la
+fig. 5.27.
+
+3
+e
+ps
+¿5
+(CD)
+o a]
+fig. 5.27
+
+2 Mantener pulsado el botón de reposición (6)
+durante 10 segundos, aproximadamente, has-
+ta que el indicador luminoso de bloqueo (7)
+comience a parpadear.
+
+Nota: durante su regulación, la caldera no funcio-
+
+nani produciendo agua sanitaria ni como calefac-
+
+ción.
+
+3. Pulsar el botón de reposición (6, fig. 5.27) de
+forma repetida (1 vez) hasta que los indicado-
+res luminosos de señalación (3) muestren una
+secuencia como la de fig. 5.28.
+
+090
+fig. 5.28
+
+Para mostrar la configuración determinada, man-
+tener pulsando el botón de reposición (6,
+fig. 5.27) durante 5 segundos aproximadamente.
+Los indicadores luminosos de señalación (3) par-
+padearán un número de veces igual a la configu-
+ración (en fig. 5.29, por ejemplo, parpadean 2
+veces).
+
+O Post=circulación bomba
+
+Núm. Configuración
+Segundos
+post-circulación bomba
+
+fig. 5.29
+
+4. Para cambiar la configuración, girar el mando
+de regulación de temperatura del agua sanita-
+ria (4, fig. 5.27) y llevarlo al valor de post=cir-
+culación deseado. El indicador luminoso de
+bloqueo (7) parpadeará rápidamente para in-
+dicar que se está modificando el valor de la
+post—circulación.
+
+5 Para memorizar la configuración, pulsar el
+botón de reposición (6) durante 5 segundos
+aproximadamente, hasta que los indicadores
+luminosos de señalación parpadeen simultá-
+neamente como en fig. 5.30
+
+20 0 Of Memorización realizada
+
+fig. 5.80
+6 Paradevolverala caldera a su funcionamiento
+habitual, poner el conmutador de función (5) a
+cero (fig. 5.81). En cualquier caso, la caldera
+
+vuelve a su funcionamiento habitual después
+de 10 minutos.
+
+3 5
+Bn=
+el
+q SNIIO
+o Eh tó
+fig. 5.31
+
+20
+
+
+E PREPARACION PARA EL FUNCIONAMIENTO
+
+[XM Secuencia de las operaciones
+
+Antes de realizar las operaciones detalladas a
+continuación, compruebe que el interruptor bipo-
+lar incorporado a la instalación está en posición
+de apagado.
+
+Alimentación de gas
+
+1. Abrirlos grifos del contador de gas y de la cal-
+dera.
+
+2 Comprobar la estanquidad del empalme de
+gas de la caldera con una solución de aguaja-
+bonosa o un producto similar.
+
+3 Cerrar la llave de gas de la caldera.
+
+Retirar el panel frontal de la caldera, así como
+está indicado en el capítulo mantenimiento,
+párrafo 9.2
+
+5 Abrir los grifos en fig. 6.1
+
+Posición de abierto
+fig. 6.1
+
+6 Purgar las tuberías de la instalación de agua
+caliente sanitaria abriendo los grifos corres-
+pondientes y dejando salir agua, luego cerrar-
+los.
+
+7 Aflojar el tapón de la válvula automática de
+purga 24 en la fig. 6.2
+
+8 Abrir los grifos de los radiadores.
+
+9 Llenar el circuito de calefacción, véase el pá-
+rrafo 3.1 en pág. 5
+
+10 Purgar los radiadores y los diferentes puntos
+altos de la instalación, luego volver a cerrarlos
+purgadores manuales eventuales.
+
+11 Quite el tapón 22 de la fig. 6.2 y desbloquee la
+bomba girando el rodete por medio de un des-
+tornillador.
+
+Durante esta operación, purgue la bomba.
+
+12 Vuelva a cerrar el tapón de la bomba.
+
+13 Montar el panel frontal de la carcasa de la cal-
+dera.
+
+14 Finalizar el llenado del circuito de calefacción.
+La purga de la instalación, así como de labomba
+de circulación se debe repetir más veces.
+
+15 Suministrar fluido eléctrico a la caldera, accio-
+nando el interruptor bipolar; el indicador lumi-
+noso3 en fig. 6.3 hace un breve centelleo cada
+4 segundos aproximadamente.
+
+16 Colocar el conmutador de función 5 igual que
+en la fig. 6.3
+El indicador luminoso 3 centellea por intermi-
+tencia de aproximadamente dos segundos.
+
+fig. 6.3
+
+17 Abrir la llave de gas
+
+18 Comprobar que el termostato está en la posi-
+ción de "demanda de calor”.
+
+19 Comprobar el funcionamiento correcto de la
+
+caldera tanto en la función de agua sanitaria
+como en la de calefacción.
+
+INSTALACIÓN
+
+
+
+Preparación para el funcionamiento
+
+20 Controlar las presiones y los caudales de gas
+como se indica en el capítulo prueba de la re-
+gulación del gas de este mismo manual.
+
+21 Apagar la caldera colocando el conmutador 5
+en la posición ”¿)” fig. 6.4
+
+22 Explicar al usuario el uso correcto del apa-
+rato y las operaciones de:
+
+- encendido
+
+- apagado
+
+- regulación
+
+El usuario tiene que guardar el manual en pertec-
+
+tas condiciones y al alcance para su consulta pos-
+terior.
+
+INSTALACIÓN
+
+22
+
+
+PRUEBA DE LA REGULACION DE GAS
+
+[AM Aovertencias
+
+Después de cualquier medición de las presio-
+nes de gas, cerrar debidamente las tomas de
+presión utilizadas (29 y 28 en la fig. 7.2).
+Además, después cada operación de regula-
+ción gas, los órganos de regulación de la vál-
+vula gas tienen que ser sellados.
+
+Cuidado, peligro de fulguración.
+
+Durante las operaciones indicadas en esta
+sección, la caldera está sometida a tensión.
+No tocar en absoluto ninguna pieza eléctri-
+ca.
+
+[ZN Prueba de la presión de gas
+
+1 Quitar el panel frontal de la caldera según lo
+que está indicado en el párrafo 9.2
+
+Verificación de la presion de alimentación de
+
+gas.
+
+2 Con la caldera apagada (fuera de servicio),
+controlarla presión de alimentación, utilizando
+latoma de presión a la entrada de la válvula de
+gas 29 en la fig. 7.2 y comparar el valor leído
+con aquéllos indicados en la tabla Presiones
+de alimentación de gas en pág. 10, 11
+
+3 Cerrar con esmero la toma de presión 29
+
+Verificación de la presión máxima hacia el que-
+
+mador.
+
+4. Abrirlatoma de presión a la salida de laválvula
+de gas 28 en la fig. 7.2 y conectar un manóme-
+tro.
+
+5 Colocar el conmutador de función 5 igual que
+en la fig. 7.1
+
+6 Colocar el mando para la regulación de la tem-
+peratura del agua sanitaria 4 en el máximo
+fig. 7.1
+
+7 Dejar salir una abundante cantidad de agua
+caliente sanitaria. Compare el valor de la pres-
+ión medida con el que está indicado en
+tab. 7.1 y tab. 7.2
+Para ajustar la presión hacia el quemador,
+hace falta actuar sobre la tuerca de latón del
+actuador modulante 27 en la fig. 7.2
+
+Mod. 24
+
+Presiones máx. hacia el quemador
+
+Natural G20 Pa 1150
+'mbar 11,5
+
+Butano G30 Pa 2650
+'mbar 26,5
+
+Propano G31 Pa 3500
+'mbar 35,0
+
+1 mbar corresponde a 10 mm H20 aproximadamente
+
+tab. 7.1
+
+Mod. 28
+Presiones máx. hacia el quemador
+
+Natural G20 Pa 1150
+mbar 11,5
+Butano G30 Pa 2750
+mbar 27,5
+Propano G31 Pa 3500
+mbar 35,0
+
+1 mbar corresponde a 10 mm H20 aproximadamente
+
+tab. 7.2
+
+Verificación de la presión mínima hacia el que-
+
+mador.
+
+8 Desconectar el hilo de alimentación “A' del ac-
+tuador modulante 27 cuidando que no llegue
+a tocar las piezas metálicas de la caldera
+fig. 7.2
+
+9 Compare el valor de la presión medida con el
+que está indicado en tab. 7.3 y tab. 7.4
+Para ajustar la presión hacia el quemador,
+hace falta actuar sobre la tuerca de plástico,
+
+23
+
+INSTALACIÓN
+
+
+INSTALACIÓN
+
+Prueba de la regulación de gas
+
+sujetando la tuerca de latón del actuador mo-
+dulante 27 en la fig. 7.2
+
+10 Volver a conectar el hilo de alimentación "A'
+del actuador modulante fig. 7.2
+
+Mod. 24
+
+Presiones mín. hacia el quemador
+
+Natural G20 Pa 220
+'mbar 22
+
+Butano G30 Pa 550
+'mbar 5,5
+
+Propano G31 Pa 700
+'mbar 7,0
+
+1 mbar corresponde a 10 mm H20 aproximadamente
+
+tab. 7.3
+Mod. 28
+Presiones mín. hacia el quemador
+Natural G20 Pa 220
+'mbar 22
+Butano G30 Pa 550
+'mbar 5,5
+Propano G31 Pa 700
+'mbar 7,0
+
+compare su valor con los datos del caudal de gas
+en págs. 10, 11
+
+[ZN Regulación del encendido del
+
+quemador
+
+Presión del gas de encendido
+
+Natural G20 Pa 600
+mbar 6,0
+
+Butano G30 Pa 1.200
+mbar 12,0
+
+Propano G31 Pa 1.300
+mbar 13,0
+
+tab. 7.5
+
+Es posible regular la Potencia de encendido en el
+
+caso que no fuere la adecuada.
+
+1. Eliminar la alimentación eléctrica a la caldera
+mediante la utilización del interruptor bipolar.
+
+2 Posicionar el Selector de función / Manoplare-
+gulación temperatura calefacción como se in-
+dica en fig.7.3; la lámpara de señalación
+centellea con una intermitencia de, aproxima-
+damente, 2 segundos.
+
+tab.7.4
+
+11 Cerrar el grifo del agua caliente sanitaria.
+12 Cerrar la toma de presión 28 en la fig. 7.2
+
+28
+
+27
+
+26
+
+fig. 7.2
+
+Durante las operaciones de prueba de las pres-
+iones máxima y mínima hacia el quemador, com-
+pruebe el caudal de gas hacia el contador y
+
+1 mbar corresponde a 10 mm H20 aproximadamente
+
+fig. 7.3
+
+3 Alimentar eléctricamente la caldera, mediante
+el accionamiento del interruptor bipolar previs-
+to en la instalación; la lámpara de señalación
+centellea cada 4 segundos.
+
+4. Mantener presionado el pulsador de restable-
+cimiento caldera durante, aproximadamente,
+10 segundos; la lámpara de bloqueo iniciará a
+centellear
+
+5 Para configurar la potencia de encendido, los
+indicadores luminosos de señalación se de-
+ben visualizar como se indica en fig. 7.4
+
+24
+
+
+Prueba de la regulación de gas
+
+Configuración potencia en-
+cendido
+
+e 0.0.
+
+fig. 7.4
+
+6 Enel caso que no se visualizare esta secuen-
+cia, hay que presionar el pulsador de restable-
+cimiento tantas veces (4 veces), como sea
+necesario hasta lograr la visualización.
+
+7. Para visualizar la configuración programada,
+hay que mantener presionado el pulsador de
+restablecimiento durante, aproximadamente,
+5:segundos. Los indicadores luminosos de se-
+ñalación centellearán un número de veces
+equivalente a la configuración.
+
+8 Para modificar la configuración, hay que girar
+la manopla regulación temperatura sanitarios
+en fig. 7.5 y posicionarla en el tiempo previa-
+mente elegido; (en la figura ejemplo manopla
+configurada en la posición 5, véase también la
+tabla presente en el manual caldera — capítulo
+Verificación regulación del gas), la lámpara de
+señalación centellea velozmente
+
+50%
+130 70% Default
+85
+tos
+43 =p 213
+2 Se, 6
+
+4 255 100%
+
+4
+
+Potencia
+
+0% 0
+
+4
+
+s a
+
+N? Configuración
+fig. 7.5
+
+9 Parallevara cabo la memorización de la confi-
+guración programada, hay que mantener pre-
+sionado el pulsador de restablecimiento
+caldera durante, aproximadamente, 5 segun-
+dos; todos los indicadores luminosos de seña-
+lación centellearán simultáneamente, como se
+describe en fig. 7.6
+
+2D: 00% Confirmación memorización
+fig. 7.6
+
+Posicionar el selector como se indica en fig. 7.7
+para salir de la programación
+
+fig. 7.7
+
+[ZW Regulación de la potencia útil
+en la función calefacción
+
+La Potencia útil máxima en calefacción por exi-
+gencias particulares se puede disminuir sin nece-
+sidad de variar la del sanitario.
+
+Para configurar la Potencia útil máxima en calefac-
+
+ción, hay que proceder como se indica a conti-
+
+nuación:
+
+1. Presionar el pulsador de restablecimiento cal-
+dera tantas veces (2 veces) como sea necesa-
+rio hasta lograr la visualización de los
+indicadores luminosos de señalación como se
+indica en fig. 7.8
+
+O 0 0 Potencia útil calefacción
+
+fig. 7.8
+130
+85 175
+3 5
+43 ..
+ESOS
+A 04: g y 100%
+% e Potencia
+
+N? Configuración
+fig.7.9
+
+2 Para modificar la configuración, hay que girar
+la manopla regulación temperatura sanitarios
+y ponerla en la posición previamente elegida;
+(ejemplo: enla Fig. 1.25 manopla programada
+en la posición 7; véase también las tablas pre-
+sentes en el manual caldera — capítulo Verifi-
+
+25
+
+INSTALACIÓN
+
+
+INSTALACIÓN
+
+Prueba de la regulación de gas
+
+cación regulación del gas); la lámpara de
+señalación centellea velozmente.
+
+3 Parallevara cabo la memorización de la confi-
+guración programada, hay que mantener pre-
+sionado el pulsador de restablecimiento
+caldera durante, aproximadamente, 5 segun-
+dos; todos los indicadores luminosos de seña-
+lación centellearán simultáneamente como se
+
+0% Confirmación memorización
+
+fig. 7.10
+
+Posicionar el selector como se indica en fig. 7.7
+para salir de la programación
+
+describe en Fig. 1.26
+
+Mod. 24
+
+Potencia útil kw 11,50 [13,00 |14,50 |16,00 [18,550 [20,00 |21,50 | 23,00
+kcal 9890 |11180 | 12470 |13760 | 15910 | 17200 | 18490 | 19780
+
+Natural Pa 300 380 460 540 710 810 930 1050
+mbar 3,0 3,8 46 5,4 7,1 8,1 9,3 10,5
+m/h 1,41 1,60 1,76 1,92 2,19 2,35 2,51 2,67
+
+Butano Pa 700 890 1080 |1280 |1680 |1920 [2190 |2480
+mbar 7,0 8,9 18 [128 |168 [192 [219  |248
+kg/n 1,05 1,19 1,31 1,43 1,64 1,75 1,87 1,99
+
+Propano Pa 900 1150 |1400 [1660 |2170 [2480 |2840 [3200
+mbar 9,0 ms [140 |166 [217 [248 [28,4  |320
+kg/n 1,04 1,17 1,30 1,41 1,61 1,72 1,84 1,96
+
+tab. 7.6
+
+Mod. 28
+
+Potencia útil kw 13,00 [15,00 |17,00 [19,00 [21,00 [23,00 |25,00 |27,00
+kcal 11180 | 12900 | 14620 [16340 |18060 | 19780 | 21500 | 23220
+
+Natural Pa 280 370 460 560 670 790 920 1060
+mbar 2,8 3,7 46 5,6 6,7 7,9 9,2 10,6
+m/h 1,60 1,85 2,07 2,28 2,49 2,70 2,92 3,13
+
+Butano Pa 650 870 1090 |1320 |1580 |1860 |2170 |2500
+mbar 6,5 8,7 109 [132 |158 [18,6 [21,7 [250
+kg/n 1,19 1,38 1,54 1,70 1,86 2,01 2,17 2,34
+
+Propano Pa 840 1200 |1410 [1710 |2050 [2400 |2800 [3240
+mbar 8,4 112 14,1 11 [205 |240 [280 [324
+kg/n 1,17 1,35 1,52 1,67 1,83 1,98 2,14 2,30
+
+tab.7.7
+
+26
+
+
+
+EN cambio DE GAS
+
+EXE ¡overtencias
+
+Las operaciones de adaptación dela caldera al
+tipo de gas disponible deben ser efectuadas
+por un Servicio de Asistencia Autorizado.
+
+Los componentes utilizados para la adapta-
+ción al tipo de gas disponible, deben ser sola-
+
+mente repuestos originales.
+
+Para las instrucciones relativas al ajuste de la
+
+válvula de gas de la caldera, hace falta referirse
+
+al capítulo prueba de la regulación de gas en
+ág. 23
+
+Operaciones
+
+1 Comprobar que la llave de gas incorporada a
+la tubería de gas hacia la caldera está cerrada
+y que el aparato no está sometido a tensión.
+
+2 Retirar el panel frontal de la caldera según lo
+que está detallado en el capítulo mantenimien-
+to, párrafo 9.2
+
+3 Quitar el panel delantero de la cámara de com-
+bustión y el quemador 36 en fig. 8.1
+
+fig. 8.1
+
+4. Llevaracabo la transformación del tipo de gas
+sustituyendo correctamente los inyectores del
+quemador 36 en pág. 7
+
+5 Volver a montar el quemador 36 en pág. 7 y el
+panel de la cámara de combustión.
+
+Configuración tipo gas
+
+Indicaciones luminosas dadas por los pilotos
+de las funciones caldera
+
+Leyenda
+
+O Luzapagado  (): Luz parpadea
+
+Luz parpadea
+O Euemendida zo. altemativamen-
+fija 09 te con otro pilo-
+
+to
+
+fig. 8.2
+1 Sumministrar fluido eléctrico a la caldera
+
+2 Colocar el conmutador 5 como en la fig. 8.3; el
+indicador luminoso 3 centellea por intermiten-
+cia de aproximadamente cuatro segundos.
+
+3 4 5 7
+e 6
+
+¡CD! ¿O
+
+o) m/, Eh le
+
+fig. 8.3
+
+3 Desconectar eléctricamente la sonda de tem-
+peratura calefacción NTC; (ejemplos fig. 8.4)
+
+J
+
+4. Mantener presionado el pulsador de restable-
+cimiento caldera 6 durante, aproximadamen-
+te, 10 segundos; la lámpara de bloqueo en
+fig. 8.5 comenzará a centellear.
+
+27
+
+MANUTENCIÓN
+
+
+
+MANUTENCIÓN
+
+5 Volver a conectar eléctricamente la sonda de
+temperatura calefacción NTC (ejemplos
+fig. 8.4).
+
+6 Para llevar a cabo la calibración del Tipo de
+gas, los indicadores de señalación LD1, LD2,
+LD3 se deben visualizar como se indica en Fig.
+1.6 (leyenda indicadores en fig. 8.2).
+
+O O 90 Configuración Tipo gas
+fig. 8.6
+
+7 Enel caso que no se visualizare esta secuen-
+cia, hay que presionar el pulsador de restable-
+cimiento que se indica en 6 tantas veces (4
+veces) como sean necesarias para la visualiza-
+ción.
+
+8 Para visualizar la configuración programada,
+hay que mantener presionado el pulsador de
+restablecimiento, que se indica en fig. 8.5 du-
+rante, aproximadamente, 5 segundos. Los in-
+dicadores — luminosos de  señalación
+centellearán un número de veces equivalente
+al número que se indica al lado de la descrip-
+ción del tipo de gas (N* configuración) fig. 8.7
+
+Tipo gas y» BUTANO
+
+AOPANO
+
+NATURAL O
+
+N? Configuración
+fig. 8.7
+
+9 Para cambiarla configuración, hay que girar la
+manopla de regulación temperatura sanitarios
+y llevarla a la posición correcta; (por ejemplo:
+en la fig. 8.7 manopla configurada para Gas,
+GLP); la lámpara de señalación boqueo calde-
+ra centellea velozmente.
+
+10 Para la memorización de la configuración pro-
+gramada, hay que mantener presionado el
+pulsador de restablecimiento caldera durante,
+aproximadamente, 5 segundos; todos los indi-
+cadores luminosos de señalación centellean
+simultáneamente, como se describe en Fig.
+18
+
+(O: Confirmación memorización
+
+fig. 8.9
+
+11 Realizar los ajustes de la válvula de gas según
+las instrucciones detalladas en el capítulo
+prueba de la regulación de gas
+
+12 Aplicar la etiqueta indicando la naturaleza del
+gas y el valor de presión para el cual está ajus-
+tado el aparato.
+
+La etiqueta adhesiva viene en el kit de transfor-
+mación.
+
+28
+
+
+EN MANTENIMIENTO
+
+EXE ¡overtencias
+
+Las operaciones que se van a detallar en este
+capítulo deben ser ejecutadas sólo por per-
+sonal cualificado, por tanto se aconseja diri-
+girse a un Servicio de Asistencia Autorizado.
+
+Para el funcionamiento eficiente y regular de la
+caldera, se aconseja hacer realizar al menos
+una vezal año su mantenimiento y limpieza por
+
+parte de un técnico del Centro de Asistencia
+Autorizado.
+
+Antes de efectuar cualquier operación de lim-
+pieza y mantenimiento, apertura o desmontaje
+de los paneles de la caldera, desconectar el
+aparato de la red de alimentación eléctrica,
+actuando sobre el interruptor bipolar dispues-
+to en la instalación y cerrar la llave de
+
+Desmontaje de los paneles
+exteriores
+
+Panel frontal
+
+1 Aflojar los tornillos ”A”. Retirar el panel frontal
+desplazándolo hacia arriba de modo que se
+suelte de los ganchos de abajo fig. 9.1
+
+WN
+
+fig. 9.1
+
+Paneles laterales
+
+2 Aflojar los tornillos "A" fig. 9.2 y quitar los dos
+paneles laterales, empujándolos hacia arriba
+de modo que se suelten de los ganchos super-
+ior
+
+fig. 9.2 vista lado inferior
+
+EEN vaciado del circuito de agua
+sanitaria
+
+1. Cerrar el grifo de entrada del agua sanitaria 13
+en la fig. 9.8
+
+Posición de cerrado
+
+fig. 9.3
+
+2 Abrirlos grifos del agua caliente sanitaria de la
+instalación.
+
+29
+
+MANUTENCIÓN
+
+
+MANUTENCIÓN
+
+Mantenimiento
+
+EX vaciado del circuito de
+calefacción
+1 Cerrar los grifos de alimentación y retorno 10
+
+y 14 en la fig. 9.3 de la instalación de calefac-
+ción.
+
+Abrirel grifo de vaciado del circuito primario 20
+en la fig. 9.4
+
+ES Limpieza del intercambiador
+primario
+
+Retirar el panel frontal de la carcasa, luego el pan-
+el delantero de la cámara de combustión.
+
+Caso de que se detecte la presencia de suciedad
+en las aletas del intercambiador primario 38 en
+pág. 7, recubrir enteramente la superficie de las
+rampas del quemador 36 en pág. 7 con una pro-
+tección (papel de periódico o algo similar) y cepil-
+lar con un cepillo de cerdas el intercambiador
+primario. 38 en pág. 7
+
+EJ Prueba de la presurización del
+vaso de expansión para
+calefacción
+
+Vaciar el circuito de calefacción como se acaba de
+
+detallar en el párrafo 9.4 de este mismo capítulo
+
+y controlar que la presión del vaso de expansión
+no es inferior a 1 bar.
+
+Sila presión fuera inferior, realizar la presurización
+correcta.
+
+Limpieza del intercambiador
+sanitario
+
+La desincrustación del intercambiador sanitario
+
+39.en pág. 7 será realizada por el Técnico del Ser-
+
+vicio Oficial de Asistencia Técnica que realizará la
+
+limpieza eventual utilizando productos apropia-
+dos.
+
+EEN Limpieza del quemador
+
+El quemador 36 en pág. 7 del tipo por rampas y
+multigás, no requiere un mantenimiento particu-
+lar, es suficiente sacarle el polvo con un cepillo de
+cerdas.
+
+Las operaciones de mantenimiento más específi-
+cas de este componente serán valoradas y ejecu-
+
+tadas por el Técnico del Servicio de Asistencia
+Autorizado.
+
+EX Dispositivo para el control de
+los humos
+
+La caldera está equipada con un dispositivo para
+el control de la evacuación de los productos de la
+combustión 17 en pág. 7
+
+En caso de que en el ambiente se difundan los
+gases de la combustión (obstrucción o ineficacia
+del conducto de evacuación de los humos), este
+dispositivo corta la alimentación de gas hacia la
+caldera deteniendo el funcionamiento.
+
+Si el dispositivo actúa a menudo, significa que el
+sistema para la evacuación de los humos (chime-
+nea o conducto de humos) no funciona debida-
+mente.
+
+De ser asi el Técnico cualificado deberá tomar las
+medidas necesarias.
+
+Está prohibido deshabilitar el dispositivo para
+el control de los humos.
+
+En caso de que se detecten unas anomalías de
+funcionamiento del dispositivo, éste se debe sus-
+tituir únicamente por el repuesto original.
+Entodo caso se aconseja hacer controlar periódi-
+camente por un técnico especializado (una vez al
+año como mínimo) la eficiencia del tiro y la integri-
+dad del cañón y/o del conducto de evacuación de
+los humos.
+
+30
+
+
+Mantenimiento
+
+La prueba del rendimiento caldera se debe efec-
+
+tuar cada dos años.
+
+1. Ponga en marcha la caldera para calefacción
+ala máxima potencia.
+
+2 Compruebe la combustión de la caldera utili-
+zando la toma de humos situada en el tubo de
+expulsión del humo cerca de la caldera y
+compare los datos medidos con los de la
+tab. 9.1 ótab. 9.2
+
+La prueba se puede efectuar también con la cal-
+
+dera funcionando ala máxima potencia para agua
+
+sanitaria, pero en tal caso se lo debe indicar en el
+informe relativo a la prueba
+
+mod. 24
+Capacidad calorífica nom. — kW 26,60
+Rendimiento global % 90,2
+Rendimiento de combustión % 92,2
+Exceso de aire n 23
+% 5,1
+% 11,8
+Composición humos CO ppm 100
+Temperatura humos *C 115
+* Valores correspondientes a las pruebas con chi-
+'menea de 1 m y gas Natural G20.
+
+tab. 9.1
+
+mod. 28
+Capacidad calorífica nom. — kW 31,10
+Rendimiento global % 90,0
+Rendimiento de combustión % 92,5
+Exceso de aire n 1.9
+Composición humos CO % 63
+Composición humos Oz % 9,7
+Composición humos CO ppm 100
+Temperatura humos "C 130
+
+* Valores correspondientes a las pruebas con chi-
+
+menea de 1 m y gas Natural G20.
+
+tab. 9.2
+
+EX Regulación de la función
+deshollinador de la caldera
+
+Con la caldera configurada en Deshollinador, es
+posible excluir las funciones automáticas de la cal-
+dera, facilitando así las operaciones de control y
+verificación.
+
+Indicaciones luminosas dadas por los pilotos
+de las funciones caldera
+
+Leyenda LED
+
+O Luzapagado “(O Luz parpadea
+
+Luz parpadea
+
+Luz encendida ¿4 altemativamen-
+O ¡a 0D te con otro pilo-
+to
+
+fig. 9.5
+
+Para mirar los indicadores luminoso (LED en
+fig. 9.6), presente al interno del cuadro de man-
+dos,realizar las operación como está indicado:
+
+31
+
+MANUTENCIÓN
+
+
+MANUTENCIÓN
+
+Mantenimiento
+
+A
+200000
+
+EE
+
+pa
+fig. 9.6
+
+1 Aflojar los tornillos ”A”. Retirar el panel frontal
+desplazándolo hacia arriba de modo que se
+suelte de los ganchos de abajo fig. 9.1
+
+2 Aflojar los tornillos "A" fig. 9.2 y quitar los dos
+paneles laterales, empujándolos hacia arriba
+de modo que se suelten de los ganchos super-
+ior
+
+3 Saque frontalmente el panel de mandos para
+tener acceso a la bornera de alimentación
+
+4. Aflojarlostornillos y retirarla tapa de la bornera
+fig. 9.7
+
+fig. 9.7
+
+5 Alimentar eléctricamente la caldera, mediante
+el accionamiento del interruptor bipolar previs-
+to en la instalación; la lámpara de señalación
+bloqueo centelleará cada 4 segundos.
+
+6 Posicionar el selector de función / manopla de
+regulación temperatura calefacción, como se
+indica en fig. 9.8
+
+fig. 9.8
+
+7 Hay que asegurarse de que el termostato am-
+biente se encuentre en la posición de "pedido
+calor”.
+
+8 Mantener presionado el pulsador de restable-
+cimiento durante, aproximadamente, 10 se-
+gundos; la lámpara de bloqueo caldera
+iniciará a centellear.
+
+9 Para programar la función Deshollinador los
+indicadores luminosos de señalación (LED) se
+deben visualizar como en fig. 9.9
+
+e 0.0
+
+fig. 9.9
+
+10 Volver a presionar el pulsador de restableci-
+miento caldera durante, aproximadamente, 5
+segundos; la lámpara de bloqueo se apaga,
+mientras que los indicadores luminosos de se-
+ñalación centellean en modalidad pedido po-
+tencia calefacción en fig. 9.10
+
+Programación Deshollina-
+dor
+
+O Ó:
+
+En pedido potencia calefac-
+ción
+
+fig. 9.10
+
+11 Proceder luego como siempre a la regulación
+de la válvula del gas.
+
+Es posible variar la potencia térmica de la calefac-
+
+ción girando la manopla regulación temperatura
+
+sanitarios fig. 9.11
+
+32
+
+
+Mantenimiento
+
+Mínima
+
+Máxima
+
+fig. 9.12
+
+Para salir de la programación, hay que posicionar
+el Selector de función / Manopla regulación tem-
+peratura calefacción en la posición “Invierno”, co-
+mo se indica en fig. 9.13
+
+fig. 9.14
+
+Después de que hayan pasado 15 minutos, de to-
+das maneras, la caldera sale de la programación
+Deshollinador y retorna alas configuraciones nor-
+males.
+
+EXP Configuraciones para el
+cambio de la tarjeta de mando
+Cuando se sustituye la tarjeta de mando es indis-
+
+pensable configurarla para el tipo exacto de cal-
+dera.
+
+1 Aflojarlostomillos y retirarla tapa de la bornera
+fig. 9.7
+
+2 Desconecte la alimentación eléctrica de la cal-
+dera, coloque los interruptores DIP de la tarjeta
+como se indica en la fig.fig. 9.15
+
+E
+
+fig. 9.15
+
+3 Conecte la alimentación de la caldera y espe-
+re, antes derealizar cualquier maniobra, quela
+tarjeta de mando haya adquirido la nueva pro-
+gramación, los leds parpadearán simultánea-
+mente.
+
+4. Cuando se ha completado la memorización,
+desconecte la alimentación eléctrica de la cal-
+dera y coloque nuevamente los interruptores
+DIP en posición OFF (fig.)
+
+ON
+
+33
+
+MANUTENCIÓN
+
+
+
+
+
+
+2800008 8 0 O
+Y
+
+17962.1005.2 4109 40A5 ES
+
+() MANAUT
+
+C8C Manaut, S.L. Pol. Ind. Can Volart,
+Torre de Cellers , 5 —
+
+08150 Parets del Vallés — Barcelona
+Servicio de Asistencia Técnica Oficial
+902 333 456 info4manaut.com
+
+

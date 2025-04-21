@@ -1,0 +1,252 @@
+--- Page 1 ---
+INSTRUCCIONES DE USO Y NOTAS
+TÉCNICAS PARA LA INSTALACIÓN
+Modelo
+MIDAS ECO 24E
+MIDAS ECO 28E
+Mixta estanca
+
+
+--- Page 2 ---
+-2-
+ADVERTENCIA
+Le felicitamos por su elección.
+Su caldera es modulante, de encendido y regulación electrónicos.
+• de alta eficiencia
+• de cámara estanca
+• con intercambiador de agua sanitaria de acero
+• con baja emisión de NOx.
+Su caldera con baja emisión de NOx, a diferencia de las calderas tradicionales, permite recuperar 
+energía disminuyendo la temperatura de la llama del quemador; por lo que los humos de descarga 
+contienen menos sustancias perjudiciales para el ambiente.
+Los materiales con los que está fabricada y sus sistemas de regulación le ofrecen seguridad, con-
+fort elevado y ahorro energético, lo que le hará aprovechar al máximo las ventajas de la calefacción 
+autónoma.
+PELIGRO: las indicaciones marcadas con este símbolo deben cumplirse para evitar 
+accidentes de origen mecánico o genérico (ej.: heridas o contusiones).
+PELIGRO: las indicaciones marcadas con este símbolo deben cumplirse para evitar 
+accidentes de origen eléctrico (electrocución).
+PELIGRO: las indicaciones marcadas con este símbolo deben cumplirse para evitar 
+el peligro de incendio o explosión.
+PELIGRO: las indicaciones marcadas con este símbolo deben cumplirse para evitar 
+accidentes de origen térmico (quemaduras).
+ATENCIÓN: las indicaciones marcadas con este símbolo deben cumplirse para evi-
+tar funcionamientos defectuosos y/o daños materiales al aparato o a otros objetos.
+ATENCIÓN: las indicaciones marcadas con este símbolo contienen información im-
+portante que se debe leer detenidamente.
+
+
+--- Page 3 ---
+-3-
+ADVERTENCIA
+IMPORTANTE
+	 El manual se debe leer cuidadosamente para permitir un uso racional y seguro de la caldera. 
+Debe conservarse con cuidado, ya que puede ser necesario consultarlo en el futuro. Si se cede 
+el aparato a otro propietario, este manual deberá entregarse junto con él.
+	 El primer encendido debe ser efectuado por uno de los Centros de Asistencia Autorizados. La 
+garantía será válida a partir de la fecha en que se realice.
+	 El fabricante declina toda responsabilidad por las eventuales traducciones de este manual 
+que puedan dar lugar a una interpretación errónea, y no podrá ser considerado responsable 
+por el incumplimiento de las instrucciones contenidas en este manual o por las consecuencias 
+de cualquier maniobra que no se describa de forma específica.
+DURANTE LA INSTALACIÓN
+	 La instalación debe ser realizada por personal cualificado de tal forma que, bajo su responsa-
+bilidad, se cumplan todas las leyes y normas nacionales y locales pertinentes.
+	 La caldera permite calentar agua a una temperatura inferior a la de ebullición y debe conectar-
+se a una instalación de calefacción y/o a una red de distribución de agua sanitaria de manera 
+compatible con sus prestaciones y su potencia.
+	
+La caldera debe alimentarse con gas Natural (G20) o GLP (BUTANO G30 - PROPANO G31).
+	
+La caldera deberá destinarse solo al uso para el que ha sido expresamente concebida; además:
+• No debe exponerse a los agentes atmosféricos.
+• Este aparato no está destinado a ser usado por personas con capacidades psíquicas o motri-
+ces reducidas, o que carezcan de la experiencia y los conocimientos necesarios (incluidos los 
+niños), a menos que una persona responsable de su seguridad se encargue de supervisarlas 
+e instruirlas adecuadamente en el uso del aparato.
+• Es necesario vigilar a los niños para asegurarse de que no jueguen con el aparato.
+• Evite el uso incorrecto de la caldera.
+• No manipule los dispositivos precintados.
+• Evite el contacto con las partes calientes durante el funcionamiento.
+
+
+--- Page 4 ---
+-4-
+ADVERTENCIA
+DURANTE EL USO
+	 Debido a que es peligroso, queda prohibido obstruir, aunque sea parcialmente, la toma o las 
+tomas de aire para la ventilación del local en el que está instalada la caldera (UNI 7129/08).
+	 Las reparaciones deben ser realizadas únicamente por uno de los Servicios de Asistencia Au-
+torizados utilizando repuestos originales; limítese únicamente desactivar la caldera (véanse las 
+instrucciones).
+	 Si percibe olor a gas:
+• No accione interruptores eléctricos, el teléfono ni cualquier otro dispositivo que pueda pro-
+ducir chispas.
+• Abra en seguida las puertas y ventanas para crear una corriente de aire que ventile el local.
+• Cierre las llaves del gas.
+• Solicite la intervención de personal profesional cualificado.
+	 Antes de poner en marcha la caldera, se aconseja hacer comprobar a personal profesional 
+cualificado que la instalación de alimentación de gas:
+• Es estanca.
+• Está dimensionada para el caudal necesario para la caldera.
+• Está provista de todos los dispositivos de seguridad y control establecidos por las normas 
+vigentes;
+• Asegúrese de que el instalador haya conectado la descarga de la válvula de seguridad a un 
+embudo de descarga.
+ El fabricante no se responsabiliza de los daños causados por la apertura de la válvula de se-
+guridad y la consiguiente salida de agua, si no está conectada correctamente a una red de 
+desagüe.
+	 No toque el aparato con partes del cuerpo mojadas o húmedas y/o con los pies descalzos.
+	 En caso de trabajos u operaciones de mantenimiento de estructuras ubicadas cerca de los 
+conductos de humos y/o en los dispositivos para la evacuación de humos o sus accesorios, 
+apague el aparato y, una vez finalizado el trabajo, haga que personal profesional cualificado 
+compruebe su eficacia.
+
+
+--- Page 5 ---
+-5-
+ÍNDICE
+1	 Descripción de la caldera .  .  .  .  .  .  . . . . . . . 6
+1.1	
+Vista de conjunto .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . 6
+1.2	
+Válvulas de cierre y llaves .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . 6
+1.3	
+Cuadro de mandos .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . 7
+1.4	
+Características generales del LCD  .  .  .  .  .  .  .  . . . . . . . . 8
+2	 Instrucciones de uso .  .  .  .  .  .  .  .  . . . . . . . . . 10
+2.1	
+Advertencias .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 10
+2.2 
+Encendido .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . 10
+2.3	
+Temperatura del circuito de calefacción .  .  .  . . . . 11
+2.4	
+Temperatura del agua sanitaria .  .  .  .  .  .  .  . . . . . . . . 12
+2.5	
+Función precalentamiento 3 estrellas  .  .  .  .  . . . . . 12
+2.6	
+Apagado .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . 13
+3	 CONSEJOS ÚTILES .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . 14
+3.1	
+Llenado del circuito de calefacción .  .  .  .  .  .  . . . . . . 14
+3.2	
+Calefacción .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . 14
+3.3	
+Protección antihielo .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . 14
+3.4	
+Mantenimiento periódico .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . 15
+3.5	
+Limpieza exterior .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . 15
+3.6	
+Anomalías de funcionamiento .  .  .  .  .  .  .  .  . . . . . . . . 15
+3.7	
+Visualizaciones en modalidad INFO .  .  .  .  .  . . . . . . 16
+3.8	
+Código de anomalía remoto .  .  .  .  .  .  .  .  .  . . . . . . . . . 17
+4	 CARACTERÍSTICAS TÉCNICAS .  .  .  .  .  .  . . . . . . 18
+4.1	
+Vista de conjunto .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . 18
+4.2 
+Esquema de principio  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . 19
+4.3 
+Esquema eléctrico .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . 21
+4.4 
+Datos técnicos MIDAS ECO 24E . . . . . . . . . . . . . . . .22
+4.5 
+Datos técnicos MIDAS ECO 28E . . . . . . . . . . . . . . . .25
+4.6	
+Curva característica hidráulica .  .  .  .  .  .  .  .  . . . . . . . . 28
+4.7	
+Depósito de expansión .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . 28
+5	 INSTALACIÓN  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . 29
+5.1	
+Advertencias .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 29
+5.2	
+Precauciones de instalación .  .  .  .  .  .  .  .  .  . . . . . . . . . . 29
+5.3	
+Instalación del soporte de caldera .  .  .  .  .  .  . . . . . . . 30
+5.4	
+Dimensiones .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 31
+5.5	
+Racores .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . 31
+5.6	
+Montaje de la caldera .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . 31
+5.7	
+Dimensiones y longitudes de las salidas de 
+humos .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . . 32
+5.8	
+Conexión eléctrica .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . 37
+5.9	
+Conexión de un termostato de ambiente o 
+válvulas de zona .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . 38
+5.10	 Instalación de la sonda externa de temperatura 39
+5.11	 Conexión eléctrica entre la caldera y la sonda 
+externa  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . 39
+5.12	 Conexión eléctrica del control remoto 
+(opcional) .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . 39
+5.13	 Habilitación del funcionamiento con sonda 
+externa desde remoto .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . 39
+5.14	 Ajuste del coeficiente K de la sonda externa .  . . 40
+5.15	 Configuración de la postcirculación de la 
+bomba .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . . 42
+5.16	 Selección de la frecuencia de reencendido .  .  . . 44
+5.17 Ejemplos de instalaciones hidráulicas con 
+separador hidráulico (opcional) .  .  .  .  .  .  .  . . . . . . . . 46
+6	 Preparación para el servicio .  .  .  .  . . . . 47
+6.1	
+Advertencias .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 47
+6.2	
+Secuencia de las operaciones .  .  .  .  .  .  .  .  . . . . . . . . . 47
+7	 COMPROBACIÓN DE LA REGULACIÓN DEL 
+GAS .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . 49
+7.1	
+Advertencias .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 49
+7.2	
+Operaciones y configuración del gas .  .  .  .  .  . . . . . 49
+8	 CAMBIO DE GAS .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . 53
+8.1	
+Advertencias .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 53
+8.2	
+Operaciones  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 53
+9	 Mantenimiento .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . 55
+9.1	
+Advertencias .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 55
+9.2	
+Desmontaje de los paneles de la carcasa .  .  .  . . . 55
+9.3	
+Vaciado del circuito sanitario .  .  .  .  .  .  .  .  .  . . . . . . . . . 56
+9.4	
+Vaciado del circuito de calefacción .  .  .  .  .  .  . . . . . . 56
+9.5	
+Limpieza del intercambiador primario .  .  .  .  . . . . . 56
+9.6	
+Comprobación de la presurización del 
+depósito de expansión  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . 56
+9.7	
+Limpieza del intercambiador de agua sanitaria 56
+9.8	
+Limpieza del quemador  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . 56
+9.9	
+Comprobación del conducto de expulsión de 
+humos .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . . 57
+9.10	 Comprobación del rendimiento de la caldera .  . 57
+9.11	 Configuración de la función deshollinador de 
+la caldera .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . . 58
+9.12	 Ajustes para cambio de la tarjeta de control .  . . 59
+Aparato de categoría: II2H3+ (gas G20 20 mbar, G30 29 mbar, G31 37 mbar)
+País de destino: ES
+Este aparato es conforme a las siguientes Directivas Europeas:
+Directiva de Gas 2009/142/CE
+Directiva de Rendimiento 92/42/CEE
+Directiva de Compatibilidad Electromagnética 2004/108/CE
+Directiva de Baja Tensión 2006/95/CE
+El fabricante, con el fin de mejorar constantemente sus productos, se reserva el derecho de modificar los datos 
+detallados en este manual en cualquier momento y sin previo aviso.
+Este manual es un soporte informativo y no se lo puede considerar como contrato frente a terceros.
+Modelo y sigla de certificación de la caldera
+MIDAS ECO 24E
+MIDAS ECO 28E
+
+

@@ -126,48 +126,29 @@ LLAMACPP_OPTIMIZED_CONFIG = {
 
 # Available models configuration
 AVAILABLE_MODELS = {
+    # Llama models
+    "tinyllama-1.1b": {
+        "model_id": "TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF",
+        "family": "llama",
+        "local_path": os.path.join(MODELS_DIR, "tinyllama-1.1b-chat-v1.0-gguf"),
+        "filename": "tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
+        "download_url": "https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
+        "config_template": "base",
+        "description": "Very small model for limited hardware (600MB)"
+    },
+
     # Phi-3 models
-    # "phi-3-mini": {
-    #     "model_id": "bartowski/Phi-3-mini-4k-instruct-GGUF",
-    #     "family": "phi",
-    #     "local_path": os.path.join(MODELS_DIR, "phi-3-mini-4k-instruct-gguf"),
-    #     "filename": "Phi-3-mini-4k-instruct-Q4_K_M.gguf",
-    #     "download_url": "https://huggingface.co/bartowski/Phi-3-mini-4k-instruct-GGUF/resolve/main/Phi-3-mini-4k-instruct-Q4_K_M.gguf",
-    #     "config_template": "optimized",
-    #     "description": "Small model with good performance (2.2GB). This version does not work with CUDA."
-    # },
-    "phi-3-mini-cuda": {
+    "phi-3-mini-4k-instruct": {
         "model_id": "microsoft/Phi-3-mini-4k-instruct-gguf",
         "family": "phi",
         "local_path": os.path.join(MODELS_DIR, "phi-3-mini-4k-instruct-gguf"),
         "filename": "Phi-3-mini-4k-instruct-q4.gguf",
         "download_url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4.gguf",
         "config_template": "optimized",
-        "description": "Small model with good performance (2.2GB). This version works with CUDA."
+        "description": "Small model with good performance (2.2GB)"
     },
-    # "phi-3-medium": {
-    #     "model_id": "bartowski/Phi-3-medium-4k-instruct-GGUF",
-    #     "family": "phi",
-    #     "local_path": os.path.join(MODELS_DIR, "phi-3-medium-4k-instruct-gguf"),
-    #     "filename": "Phi-3-medium-4k-instruct-Q4_K_M.gguf",
-    #     "download_url": "https://huggingface.co/bartowski/Phi-3-medium-4k-instruct-GGUF/resolve/main/Phi-3-medium-4k-instruct-Q4_K_M.gguf",
-    #     "config_template": "optimized",
-    #     "config_override": {
-    #         "n_batch": 128,
-    #     },
-    #     "description": "Medium-sized model with better reasoning (4GB)"
-    # },
     
     # Mistral models
-    # "mistral-7b": {
-    #     "model_id": "TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
-    #     "family": "mistral",
-    #     "local_path": os.path.join(MODELS_DIR, "mistral-7b-instruct-v0.2-gguf"),
-    #     "filename": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
-    #     "download_url": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
-    #     "config_template": "optimized",
-    #     "description": "Strong general-purpose model (4.1GB)"
-    # },
     "mistral-7b-instruct-16k": {
         "model_id": "TheBloke/OpenHermes-2.5-Mistral-7B-16k-GGUF",
         "family": "mistral",
@@ -182,53 +163,9 @@ AVAILABLE_MODELS = {
         },
         "description": "Extended 16K context window for large technical documents (4.4GB)"
     },
-    # "zephyr-7b": {
-    #     "model_id": "TheBloke/zephyr-7B-beta-GGUF",
-    #     "family": "mistral",
-    #     "local_path": os.path.join(MODELS_DIR, "zephyr-7b-beta-gguf"),
-    #     "filename": "zephyr-7b-beta.Q4_K_M.gguf",
-    #     "download_url": "https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/resolve/main/zephyr-7b-beta.Q4_K_M.gguf",
-    #     "config_template": "optimized",
-    #     "description": "Instruction-tuned 7B model (4.1GB)"
-    # },
-    # "mixtral-8x7b": {
-    #     "model_id": "TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF",
-    #     "family": "mistral",
-    #     "local_path": os.path.join(MODELS_DIR, "mixtral-8x7b-instruct-v0.1-gguf"),
-    #     "filename": "mixtral-8x7b-instruct-v0.1.Q2_K.gguf",
-    #     "download_url": "https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/resolve/main/mixtral-8x7b-instruct-v0.1.Q2_K.gguf",
-    #     "fallback": {
-    #         "filename": "tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
-    #         "local_path": os.path.join(MODELS_DIR, "tinyllama-1.1b-chat-v1.0-gguf")
-    #     },
-    #     "config_template": "optimized",
-    #     "config_override": {
-    #         "n_gpu_layers": 1 if IS_CUDA else 0,
-    #     },
-    #     "description": "Large powerful MoE model (low quantization) (13GB)"
-    # },
-    
-    # Llama models
-    "tinyllama-1.1b": {
-        "model_id": "TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF",
-        "family": "llama",
-        "local_path": os.path.join(MODELS_DIR, "tinyllama-1.1b-chat-v1.0-gguf"),
-        "filename": "tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
-        "download_url": "https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
-        "config_template": "base",
-        "description": "Very small model for limited hardware (600MB)"
-    },
     
     # Qwen models
-    # "qwen-2-1.5b": {
-    #     "model_id": "QuantFactory/Qwen2-1.5B-Instruct-GGUF",
-    #     "family": "qwen",
-    #     "local_path": os.path.join(MODELS_DIR, "qwen2-1.5b-instruct-gguf"),
-    #     "filename": "Qwen2-1.5B-Instruct.Q4_K_M.gguf",
-    #     "download_url": "https://huggingface.co/QuantFactory/Qwen2-1.5B-Instruct-GGUF/resolve/main/Qwen2-1.5B-Instruct.Q4_K_M.gguf",
-    #     "config_template": "base",
-    #     "description": "Small but capable Chinese/English model (1.3GB)"
-    # },
+
     # OpenAI API models
     "gpt-3.5-turbo": {
         "model_id": "gpt-3.5-turbo-0125",
