@@ -160,38 +160,38 @@ def get_model_info(model_name):
     model_info = AVAILABLE_MODELS[model_name]
     
     # Start building HTML content
-    html = "<div style='padding: 10px; max-width: 800px;'>"
+    html = "<div style='max-width: 800px;'>"
     html += f"<h3>{model_name}</h3>"
-    html += f"<p><strong>Description:</strong> {model_info.get('description', 'No description available')}</p>"
-    html += f"<p><strong>Family:</strong> {model_info.get('family', 'Unknown')}</p>"
+    html += f"<ul><li><strong>Description:</strong> {model_info.get('description', 'No description available')}</li>"
+    html += f"<li><strong>Family:</strong> {model_info.get('family', 'Unknown')}</li>"
     
     # Add HuggingFace link for local models
     if "model_id" in model_info and model_info.get("family") != "openai":
         model_id = model_info["model_id"]
         if "/" in model_id:  # It's a HuggingFace model
-            html += f"<p><strong>HuggingFace:</strong> <a href='https://huggingface.co/{model_id}' target='_blank'>https://huggingface.co/{model_id}</a></p>"
+            html += f"<li><strong>HuggingFace:</strong> <a href='https://huggingface.co/{model_id}' target='_blank'>https://huggingface.co/{model_id}</a></li>"
     
     # Add compatibility information
     if model_name in COMPATIBLE_MODELS:
         compatibility = COMPATIBLE_MODELS[model_name].get("compatibility_note", "Unknown")
         if COMPATIBLE_MODELS[model_name].get("is_incompatible", False):
-            html += f"<p><strong>Compatibility:</strong> ⚠️ {compatibility}</p>"
+            html += f"<li><strong>Compatibility:</strong> ⚠️ {compatibility}</li>"
         else:
-            html += f"<p><strong>Compatibility:</strong> ✅ {compatibility}</p>"
+            html += f"<li><strong>Compatibility:</strong> ✅ {compatibility}</li>"
     
     # Add file information if available
     if 'filename' in model_info:
         file_path = os.path.join(model_info['local_path'], model_info['filename'])
         if os.path.exists(file_path):
             size_mb = os.path.getsize(file_path) / (1024 * 1024)
-            html += f"<p><strong>File:</strong> {model_info['filename']} ({size_mb:.2f} MB)</p>"
-            html += f"<p><strong>Status:</strong> <span style='color:green'>Loaded</span></p>"
+            html += f"<li><strong>File:</strong> {model_info['filename']} ({size_mb:.2f} MB)</li>"
+            html += f"<li><strong>Status:</strong> <span style='color:green'>Loaded</span></li>"
         else:
-            html += f"<p><strong>File:</strong> {model_info['filename']} (Not downloaded)</p>"
-            html += f"<p><strong>Status:</strong> <span style='color:red'>Not available</span></p>"
+            html += f"<li><strong>File:</strong> {model_info['filename']} (Not downloaded)</li>"
+            html += f"<li><strong>Status:</strong> <span style='color:red'>Not available</span></li>"
             # Add download instructions
             html += f"<div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-top: 10px;'>"
-            html += f"<p><strong>Download Command:</strong></p>"
+            html += f"<li><strong>Download Command:</strong></li>"
             html += f"<code>curl -L {model_info.get('download_url', '')} -o {file_path}</code>"
             html += f"</div>"
     

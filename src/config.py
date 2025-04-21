@@ -180,7 +180,7 @@ AVAILABLE_MODELS = {
 }
 
 # Default model
-DEFAULT_MODEL = "tinyllama-1.1b"
+DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "tinyllama-1.1b")
 MODEL_CONFIG = AVAILABLE_MODELS[DEFAULT_MODEL]
 
 # Get specific model settings from the active model config
