@@ -653,7 +653,7 @@ def save_results(file_name: str, results: Dict[str, Dict[str, Any]], output_dir:
 def main():
     parser = argparse.ArgumentParser(description='Compare PDF parsing methods')
     parser.add_argument('--input', '-i', type=str, default='knowledge', help='PDF file or directory containing PDFs')
-    parser.add_argument('--output', '-o', type=str, default='tests/results', help='Output directory')
+    parser.add_argument('--output', '-o', type=str, default='tools_evaluations/results', help='Output directory')
     parser.add_argument('--skip-install', action='store_true', help='Skip automatic installation of dependencies')
     parser.add_argument('--lang', '-l', type=str, default='spa', help='Language for OCR (e.g., "spa" for Spanish, "eng" for English)')
     args = parser.parse_args()

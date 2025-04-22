@@ -74,8 +74,8 @@ data/processed/*
 *.sqlite
 !data/.gitkeep
 
-# Test files
-tests/results/
+# Tools evaluations files
+tools_evaluations/results/
 
 # Vector database files
 data/vectordb/

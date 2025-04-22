@@ -49,7 +49,7 @@ python setup.py
 
 This will:
 - Install all required dependencies
-- Download the appropriate model (Phi-3-mini)
+- Download the appropriate model (Phi-3-mini-4k-instruct)
 - Create necessary directories for your documents and data
 
 4. Verify installation:
@@ -62,7 +62,7 @@ python -c "import torch; import gradio; print('Setup successful!')"
 
 ```bash
 # Put your PDFs, DOCXs, TXTs in the knowledge directory
-mkdir -r knowledge
+mkdir -p knowledge
 # Copy your files to the knowledge directory
 ```
 
@@ -127,10 +127,10 @@ python webapp.py -- --share=True
 ## Supported Models
 
 The chatbot includes configurations for:
-- Phi-3-mini (default) - A smaller but powerful model
-- Phi-3-mini-128k - Extended context model for handling more text
-- TinyLlama - A lightweight alternative for minimal hardware
-- Zephyr-7B - A larger model for more complex reasoning
+- Phi-3-mini-4k-instruct (default) - A smaller but powerful model with 4K context window
+- TinyLlama-1.1B - A lightweight alternative for minimal hardware (~600MB)
+- Mistral-7B-instruct-16k - A larger model with extended 16K context window
+- OpenAI models (GPT-3.5-Turbo, GPT-4) - API-based models (requires API key)
 
 To switch models, type `switch:<model_name>` in interactive mode.
 
@@ -156,8 +156,9 @@ For other issues, please check the error messages in the console output.
 The system supports both local models and the OpenAI API:
 
 ### Local Models
-- **phi-3-mini** - Small model with good performance (2.2GB)
-- **mistral-7b-instruct-16k** - Extended 16K context window for large documents (4.4GB)
+- **tinyllama-1.1b** - Very small model for limited hardware (600MB)
+- **phi-3-mini-4k-instruct** - Small model with good performance (2.2GB)
+- **mistral-7b-instruct-16k** - Extended 16K context window for large technical documents (4.4GB)
 
 ### OpenAI API Models
 - **gpt-3.5-turbo** - Affordable API model with 16k context window (requires API key)
@@ -181,9 +182,11 @@ The system can process:
 
 OCR is handled through PaddleOCR with PyMuPDF for PDF processing, providing high-quality text extraction.
 
+For multilingual document support, the system uses the "intfloat/multilingual-e5-large" embedding model, which provides excellent cross-lingual understanding for document retrieval.
+
 ## Technology Evaluations
 
-The project includes an `tools_evaluations` folder containing comparison scripts for various technologies:
+The project includes an `tools_evaluations` folder (previously named "tools_evaluations") containing comparison scripts for various technologies:
 
 - `pdf_parsing_comparison.py` - Benchmarks different PDF parsing libraries
 - Other technology evaluations for document processing
@@ -192,7 +195,7 @@ These scripts help evaluate the performance and accuracy of different libraries 
 
 To run a comparison:
 ```bash
-python evaluations/pdf_parsing_comparison.py
+python tools_evaluations/pdf_parsing_comparison.py
 ```
 
 ## License
