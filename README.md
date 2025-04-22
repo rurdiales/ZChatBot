@@ -181,6 +181,20 @@ The system can process:
 
 OCR is handled through PaddleOCR with PyMuPDF for PDF processing, providing high-quality text extraction.
 
+## Technology Evaluations
+
+The project includes an `tools_evaluations` folder containing comparison scripts for various technologies:
+
+- `pdf_parsing_comparison.py` - Benchmarks different PDF parsing libraries
+- Other technology evaluations for document processing
+
+These scripts help evaluate the performance and accuracy of different libraries and approaches for document processing tasks. They are not unit tests but rather benchmark tools for comparing technologies.
+
+To run a comparison:
+```bash
+python evaluations/pdf_parsing_comparison.py
+```
+
 ## License
 
 [MIT License](LICENSE) 
