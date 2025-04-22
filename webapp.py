@@ -455,7 +455,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Launch Industrial RAG Chatbot web interface")
     parser.add_argument("--port", type=int, default=7860, help="Port to run the app on")
     parser.add_argument("--share", action="store_true", help="Create a public link")
-    parser.add_argument("--server_name", type=str, default="192.168.0.101", help="Server name/IP to bind to")
+    parser.add_argument("--server_name", type=str, default="127.0.0.1", help="Server name/IP to bind to")
     args = parser.parse_args()
     
     # Launch with the parsed arguments

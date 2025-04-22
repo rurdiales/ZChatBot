@@ -103,3 +103,6 @@ temp/
 .Trashes
 ehthumbs.db
 Thumbs.db 
+
+# Gradio cache
+.gradio/
