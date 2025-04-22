@@ -34,17 +34,17 @@ def get_compatible_models():
             compatibility_note = "Large context models require GPU or Apple Silicon"
             
         # OpenAI API models are always compatible
-        if model_family == "openai":
+        elif model_family == "openai":
             is_compatible = True
             compatibility_note = "API model (requires API key)"
         
         # TinyLlama is compatible with everything
-        if "tinyllama" in model_name.lower():
+        elif "tinyllama" in model_name.lower():
             is_compatible = True
             compatibility_note = "Compatible with all hardware"
             
         # Phi-3 models are compatible with most hardware
-        if model_family == "phi" and IS_APPLE_SILICON:
+        elif model_family == "phi" and IS_APPLE_SILICON:
             compatibility_note = "Optimized for Apple Silicon"
         elif model_family == "phi" and IS_CUDA:
             compatibility_note = "Optimized for CUDA GPU"
@@ -185,7 +185,7 @@ def get_model_info(model_name):
         if os.path.exists(file_path):
             size_mb = os.path.getsize(file_path) / (1024 * 1024)
             html += f"<li><strong>File:</strong> {model_info['filename']} ({size_mb:.2f} MB)</li>"
-            html += f"<li><strong>Status:</strong> <span style='color:green'>Loaded</span></li>"
+            html += f"<li><strong>Status:</strong> <span style='color:limegreen'>Loaded</span></li>"
         else:
             html += f"<li><strong>File:</strong> {model_info['filename']} (Not downloaded)</li>"
             html += f"<li><strong>Status:</strong> <span style='color:red'>Not available</span></li>"
@@ -252,6 +252,27 @@ with gr.Blocks(title="Industrial RAG Chatbot") as demo:
     with gr.Tab("Models"):
         with gr.Row():
             with gr.Column(scale=1):
+                # Display the active model
+                active_model_info = gr.HTML(
+                    f"""
+                    <div style='padding: 15px; 
+                                background-color: rgba(0, 102, 204, 0.2); 
+                                border: 2px solid rgba(0, 102, 204, 0.7);
+                                border-radius: 8px; 
+                                margin-bottom: 15px;
+                                color: var(--body-text-color, #0066cc)'>
+                    
+                        <h3 style='margin-top: 0; color: var(--body-text-color, #0066cc); font-weight: bold'>
+                            ⚡ Currently Active Model: {BEST_DEFAULT_MODEL}
+                        </h3>
+                        <p style='margin-bottom: 0; color: var(--body-text-color, #333333)'>
+                            This is the model currently being used to answer questions.
+                        </p>
+                    </div>
+                    """,
+                    label="Active Model"
+                )
+                
                 # Create dropdown with color-coding for compatibility
                 model_choices = []
                 for model_name in AVAILABLE_MODELS.keys():
@@ -288,11 +309,44 @@ with gr.Blocks(title="Industrial RAG Chatbot") as demo:
                         return display_name[2:].strip()
                     return display_name
                 
-                # Connect the button to switch model function with name cleaning
+                # Function to switch model and update both info panels
+                def switch_and_update_info(model_name):
+                    clean_name = clean_model_name(model_name)
+                    
+                    # Switch the model first
+                    switch_result = switch_model(clean_name)
+                    
+                    # Get model information regardless of whether switch succeeded
+                    model_information = get_model_info(clean_name)
+                    
+                    # Update active model banner - make it dark mode compatible
+                    active_banner = f"""
+                    <div style='padding: 15px; 
+                                background-color: rgba(0, 102, 204, 0.2); 
+                                border: 2px solid rgba(0, 102, 204, 0.7);
+                                border-radius: 8px; 
+                                margin-bottom: 15px;
+                                color: var(--body-text-color, #0066cc)'>
+                    
+                       <h3 style='margin-top: 0; color: var(--body-text-color, #0066cc); font-weight: bold'>
+                            ⚡ Currently Active Model: {clean_name if switch_result.startswith("Switched to model:") else chatbot.model_name}
+                       </h3>
+                       <p style='margin-bottom: 0; color: var(--body-text-color, #333333)'>
+                           This is the model currently being used to answer questions.
+                       </p>
+                       
+                       {f"<p style='color: #ff4444; margin-top: 10px; font-weight: bold'>Warning: {switch_result}</p>" 
+                         if "Error" in switch_result or "not compatible" in switch_result else ""}
+                    </div>
+                    """
+                    
+                    return [model_information, active_banner]
+                
+                # Connect the button to the combined function
                 switch_btn.click(
-                    lambda name: switch_model(clean_model_name(name)), 
+                    switch_and_update_info, 
                     inputs=model_dropdown, 
-                    outputs=model_info
+                    outputs=[model_info, active_model_info]
                 )
                 
                 # Update model info when dropdown changes with name cleaning
@@ -401,7 +455,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Launch Industrial RAG Chatbot web interface")
     parser.add_argument("--port", type=int, default=7860, help="Port to run the app on")
     parser.add_argument("--share", action="store_true", help="Create a public link")
-    parser.add_argument("--server_name", type=str, default="127.0.0.1", help="Server name/IP to bind to")
+    parser.add_argument("--server_name", type=str, default="192.168.0.101", help="Server name/IP to bind to")
     args = parser.parse_args()
     
     # Launch with the parsed arguments

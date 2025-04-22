@@ -58,7 +58,10 @@ class LocalLLM:
         # Set local model path and filename only for local models
         if "local_path" in self.model_config:
             self.model_path = self.model_config["local_path"]
-            self.model_filename = self.model_config["filename"]
+            if "filename" in self.model_config:
+                self.model_filename = self.model_config["filename"]
+            else:
+                self.model_filename = ""
         
         self.model = self._load_model()
     
